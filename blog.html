@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog sobre Dolor Lumbar y Ejercicio | ReActiva Espalda</title>
+  <meta name="description" content="Artículos basados en evidencia científica sobre dolor lumbar persistente, hernia discal, ejercicio terapéutico y readaptación. Escrito por Pau Sintes, especialista en INEFC." />
+  <link rel="canonical" href="https://reactivaespalda.com/blog/" />
+  <meta property="og:title" content="Blog ReActiva Espalda | Dolor Lumbar y Ejercicio Terapéutico" />
+  <meta property="og:description" content="Artículos con evidencia científica sobre dolor lumbar, hernia discal, ciática y readaptación física." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green-dark:#0d7a40; --green-mid:#17a05c; --green-bright:#1db86a;
+      --green-soft:#7ecba1; --green-pale:#e8f7ef; --green-xpale:#f2fbf6;
+      --ink:#1a1a1a; --ink-60:#555f5b; --ink-30:#9aaba4;
+      --surface:#ffffff; --bg:#f7faf8;
+      --radius-sm:8px; --radius-md:16px; --radius-lg:24px;
+      --shadow-card:0 2px 16px rgba(13,122,64,.08);
+      --shadow-float:0 8px 40px rgba(13,122,64,.14);
+      --font-display:'Sora',sans-serif; --font-body:'Inter',sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:var(--font-body);color:var(--ink);background:var(--surface);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    ul{list-style:none}
+    .container{max-width:1160px;margin:0 auto;padding:0 24px}
+    /* NAV */
+    #navbar{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(29,184,106,.12);box-shadow:0 2px 20px rgba(0,0,0,.06)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+    .nav-logo{display:flex;align-items:center;gap:0}
+    .nav-logo-bars{display:flex;align-items:flex-end;gap:3px;margin-right:8px}
+    .bar{border-radius:3px}
+    .bar-1{width:8px;height:16px;background:#1db86a}
+    .bar-2{width:8px;height:24px;background:#17a05c}
+    .bar-3{width:8px;height:34px;background:#0d7a40;position:relative}
+    .bar-arrow{position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:7px solid #1db86a}
+    .nav-divider{width:1.5px;height:32px;background:#ccc;margin:0 10px}
+    .nav-name{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--ink)}
+    .nav-name span{color:var(--green-bright)}
+    .nav-links{display:flex;gap:36px}
+    .nav-links a{font-size:.88rem;font-weight:500;color:var(--ink-60);transition:color .2s}
+    .nav-links a:hover,.nav-links a.active{color:var(--green-dark)}
+    .nav-cta{font-size:.85rem;font-weight:600;color:#fff;background:var(--green-dark);padding:9px 20px;border-radius:var(--radius-sm);transition:background .2s}
+    .nav-cta:hover{background:var(--green-mid)}
+    @media(max-width:768px){.nav-links,.nav-cta{display:none}}
+    /* HERO BLOG */
+    .blog-hero{padding:120px 0 64px;background:linear-gradient(140deg,#f7faf8 0%,#e8f7ef 60%,#f2fbf6 100%);border-bottom:1px solid var(--green-pale)}
+    .blog-hero-inner{max-width:700px}
+    .section-label{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--green-bright);background:var(--green-pale);padding:5px 14px;border-radius:100px;margin-bottom:16px}
+    .blog-hero h1{font-family:var(--font-display);font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;line-height:1.12;color:var(--ink);margin-bottom:16px}
+    .blog-hero h1 span{color:var(--green-bright)}
+    .blog-hero p{font-size:1.05rem;color:var(--ink-60);max-width:560px;line-height:1.75}
+    /* FILTER TAGS */
+    .filter-bar{display:flex;gap:10px;flex-wrap:wrap;padding:36px 0 0}
+    .filter-tag{font-size:.8rem;font-weight:600;padding:7px 16px;border-radius:100px;border:1.5px solid var(--green-pale);color:var(--ink-60);cursor:pointer;transition:all .2s;background:var(--surface)}
+    .filter-tag.active,.filter-tag:hover{background:var(--green-dark);color:#fff;border-color:var(--green-dark)}
+    /* ARTICLES GRID */
+    .articles-section{padding:64px 0 100px}
+    .articles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:32px}
+    .article-card{border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--green-pale);background:var(--surface);transition:box-shadow .2s,transform .2s;display:flex;flex-direction:column}
+    .article-card:hover{box-shadow:var(--shadow-float);transform:translateY(-4px)}
+    .article-thumb{height:200px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative}
+    .article-thumb.t1{background:linear-gradient(135deg,#e8f7ef,#d0f0e0)}
+    .article-thumb.t2{background:linear-gradient(135deg,#e0f2ff,#cce8f7)}
+    .article-thumb.t3{background:linear-gradient(135deg,#fff3e0,#ffe8cc)}
+    .art-tag{position:absolute;top:14px;left:14px;background:var(--green-dark);color:#fff;font-size:.7rem;font-weight:600;letter-spacing:.06em;padding:4px 10px;border-radius:100px}
+    .art-read-time{position:absolute;top:14px;right:14px;background:rgba(255,255,255,.85);color:var(--ink-60);font-size:.72rem;font-weight:500;padding:4px 10px;border-radius:100px}
+    .article-body{padding:28px;flex:1;display:flex;flex-direction:column}
+    .art-meta{font-size:.75rem;color:var(--ink-30);margin-bottom:10px}
+    .article-card h2{font-family:var(--font-display);font-size:1.05rem;font-weight:700;color:var(--ink);margin-bottom:10px;line-height:1.35}
+    .article-card p{font-size:.87rem;color:var(--ink-60);line-height:1.68;flex:1}
+    .art-footer{display:flex;align-items:center;justify-content:space-between;margin-top:20px;padding-top:16px;border-top:1px solid var(--green-pale)}
+    .art-author{display:flex;align-items:center;gap:8px}
+    .art-avatar{width:30px;height:30px;border-radius:50%;background:var(--green-pale);display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:var(--green-dark)}
+    .art-author-name{font-size:.78rem;font-weight:500;color:var(--ink-60)}
+    .art-link{font-size:.82rem;font-weight:600;color:var(--green-dark);display:flex;align-items:center;gap:5px;transition:color .2s}
+    .art-link:hover{color:var(--green-mid)}
+    /* NEWSLETTER */
+    .newsletter{background:var(--ink);border-radius:var(--radius-lg);padding:56px 48px;margin:0 0 80px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
+    .newsletter-text h3{font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:#fff;margin-bottom:8px}
+    .newsletter-text p{font-size:.92rem;color:rgba(255,255,255,.55);max-width:380px}
+    .newsletter-form{display:flex;gap:10px;flex-wrap:wrap}
+    .newsletter-form input{padding:13px 18px;border-radius:var(--radius-sm);border:none;font-family:var(--font-body);font-size:.9rem;color:var(--ink);background:#fff;min-width:260px;outline:none}
+    .newsletter-form button{padding:13px 24px;background:var(--green-bright);color:#fff;font-weight:600;font-size:.9rem;border-radius:var(--radius-sm);cursor:pointer;border:none;font-family:var(--font-body);transition:background .2s}
+    .newsletter-form button:hover{background:var(--green-mid)}
+    /* FOOTER */
+    footer{background:var(--ink);padding:48px 0 28px}
+    .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,.06);padding-top:24px}
+    .footer-copy{font-size:.8rem;color:rgba(255,255,255,.3)}
+    .footer-legal{display:flex;gap:20px}
+    .footer-legal a{font-size:.78rem;color:rgba(255,255,255,.3)}
+    .footer-back{font-size:.88rem;color:var(--green-soft);font-weight:500;display:flex;align-items:center;gap:6px;margin-bottom:28px}
+    .footer-back:hover{color:#fff}
+    @media(max-width:640px){.newsletter{padding:36px 24px}.newsletter-form input{min-width:100%;width:100%}.newsletter-form button{width:100%}}
+  </style>
+</head>
+<body>
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="ReActiva Espalda - inicio">
+        <div class="nav-logo-bars" aria-hidden="true">
+          <div class="bar bar-1"></div><div class="bar bar-2"></div>
+          <div class="bar bar-3"><div class="bar-arrow"></div></div>
+        </div>
+        <div class="nav-divider" aria-hidden="true"></div>
+        <span class="nav-name">Re<span>A</span>ctiva Espalda</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="https://forms.gle/dZmjnF6vH3vsxkxu6" target="_blank" rel="noopener">Test Gratuito</a></li>
+        <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+      <a href="https://forms.gle/dZmjnF6vH3vsxkxu6" target="_blank" rel="noopener" class="nav-cta">Valoración gratuita</a>
+    </div>
+  </div>
+</nav>
+
+<section class="blog-hero">
+  <div class="container">
+    <div class="blog-hero-inner">
+      <div class="section-label" aria-hidden="true">Blog · Evidencia científica</div>
+      <h1>Todo lo que necesitas saber sobre <span>dolor lumbar y ejercicio</span></h1>
+      <p>Artículos escritos por Pau Sintes, especialista en readaptación física, para ayudarte a entender tu dolor y tomar decisiones informadas sobre tu salud.</p>
+      <div class="filter-bar" role="list" aria-label="Filtrar por categoría">
+        <button class="filter-tag active" role="listitem">Todos</button>
+        <button class="filter-tag" role="listitem">Educación sobre el dolor</button>
+        <button class="filter-tag" role="listitem">Hernia discal</button>
+        <button class="filter-tag" role="listitem">Kinesiofobia</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="articles-section">
+  <div class="container">
+    <div class="articles-grid">
+
+      <article class="article-card">
+        <div class="article-thumb t1">
+          <span aria-hidden="true">🧠</span>
+          <div class="art-tag">Educación sobre el dolor</div>
+          <div class="art-read-time">8 min</div>
+        </div>
+        <div class="article-body">
+          <p class="art-meta">Junio 2025 · Por Pau Sintes</p>
+          <h2>¿Por qué el reposo no cura el dolor lumbar persistente?</h2>
+          <p>Descubre por qué mantenerse activo, con la guía adecuada, es más eficaz que el reposo en cama para el dolor de espalda crónico.</p>
+          <div class="art-footer">
+            <div class="art-author">
+              <div class="art-avatar" aria-hidden="true">PS</div>
+              <span class="art-author-name">Pau Sintes</span>
+            </div>
+            <a href="reposo-dolor-lumbar.html" class="art-link" aria-label="Leer artículo sobre el reposo y el dolor lumbar">Leer artículo <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-thumb t2">
+          <span aria-hidden="true">💿</span>
+          <div class="art-tag">Hernia discal</div>
+          <div class="art-read-time">10 min</div>
+        </div>
+        <div class="article-body">
+          <p class="art-meta">Junio 2025 · Por Pau Sintes</p>
+          <h2>Hernia lumbar: qué dice la evidencia sobre el ejercicio físico</h2>
+          <p>Analizamos los estudios más recientes sobre hernia discal y ejercicio terapéutico. Lo que muchos profesionales no te cuentan.</p>
+          <div class="art-footer">
+            <div class="art-author">
+              <div class="art-avatar" aria-hidden="true">PS</div>
+              <span class="art-author-name">Pau Sintes</span>
+            </div>
+            <a href="hernia-discal-ejercicio.html" class="art-link" aria-label="Leer artículo sobre hernia discal y ejercicio">Leer artículo <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-thumb t3">
+          <span aria-hidden="true">😰</span>
+          <div class="art-tag">Kinesiofobia</div>
+          <div class="art-read-time">6 min</div>
+        </div>
+        <div class="article-body">
+          <p class="art-meta">Junio 2025 · Por Pau Sintes</p>
+          <h2>Miedo al movimiento: cómo el miedo puede perpetuar tu dolor lumbar</h2>
+          <p>La kinesiofobia es más frecuente de lo que pensamos. Te explicamos cómo identificarla y cómo abordarla de forma progresiva.</p>
+          <div class="art-footer">
+            <div class="art-author">
+              <div class="art-avatar" aria-hidden="true">PS</div>
+              <span class="art-author-name">Pau Sintes</span>
+            </div>
+            <a href="miedo-movimiento-dolor-lumbar.html" class="art-link" aria-label="Leer artículo sobre miedo al movimiento">Leer artículo <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="article-card">
+        <div class="article-thumb" style="background:linear-gradient(135deg,#fef9c3,#fef08a);">
+          <span aria-hidden="true">💡</span>
+          <div class="art-tag">Consejos prácticos</div>
+          <div class="art-read-time">9 min</div>
+        </div>
+        <div class="article-body">
+          <p class="art-meta">Junio 2025 · Por Pau Sintes</p>
+          <h2>10 tips prácticos para vivir mejor con dolor lumbar persistente</h2>
+          <p>Pequeñas decisiones diarias que, acumuladas, marcan una diferencia real. Estrategias basadas en evidencia al alcance de cualquier persona.</p>
+          <div class="art-footer">
+            <div class="art-author">
+              <div class="art-avatar" aria-hidden="true">PS</div>
+              <span class="art-author-name">Pau Sintes</span>
+            </div>
+            <a href="tips-dolor-lumbar-vida-diaria.html" class="art-link" aria-label="Leer artículo sobre tips para el dolor lumbar">Leer artículo <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-thumb" style="background:linear-gradient(135deg,#ccfbf1,#99f6e4);">
+          <span aria-hidden="true">🫁</span>
+          <div class="art-tag">Respiración</div>
+          <div class="art-read-time">8 min</div>
+        </div>
+        <div class="article-body">
+          <p class="art-meta">Junio 2025 · Por Pau Sintes</p>
+          <h2>Respiración y dolor lumbar: la herramienta que siempre llevas contigo</h2>
+          <p>Cómo la respiración diafragmática influye en la estabilidad de la columna, el sistema nervioso y la percepción del dolor. Con ejercicios prácticos.</p>
+          <div class="art-footer">
+            <div class="art-author">
+              <div class="art-avatar" aria-hidden="true">PS</div>
+              <span class="art-author-name">Pau Sintes</span>
+            </div>
+            <a href="respiracion-dolor-lumbar.html" class="art-link" aria-label="Leer artículo sobre respiración y dolor lumbar">Leer artículo <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-thumb" style="background:linear-gradient(135deg,#ffedd5,#fed7aa);">
+          <span aria-hidden="true">🔁</span>
+          <div class="art-tag">Gestión del dolor</div>
+          <div class="art-read-time">7 min</div>
+        </div>
+        <div class="article-body">
+          <p class="art-meta">Junio 2025 · Por Pau Sintes</p>
+          <h2>Recaídas en el dolor lumbar: cómo gestionarlas sin entrar en pánico</h2>
+          <p>Las recaídas son parte normal del proceso. Descubre por qué ocurren, cómo abordarlas en cada fase y qué hacer para que cada vez duren menos.</p>
+          <div class="art-footer">
+            <div class="art-author">
+              <div class="art-avatar" aria-hidden="true">PS</div>
+              <span class="art-author-name">Pau Sintes</span>
+            </div>
+            <a href="gestion-recaidas-dolor-lumbar.html" class="art-link" aria-label="Leer artículo sobre gestión de recaídas">Leer artículo <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="newsletter" style="margin-top:64px;">
+      <div class="newsletter-text">
+        <h3>Recibe nuevos artículos en tu email</h3>
+        <p>Sin spam. Solo contenido útil sobre dolor lumbar, ejercicio y recuperación cuando publique algo nuevo.</p>
+      </div>
+      <form class="newsletter-form" action="https://formspree.io/f/YOUR_NEWSLETTER_ID" method="POST" aria-label="Suscripción a newsletter" id="newsletter-form">
+        <input type="email" placeholder="tu@email.com" required aria-label="Tu email" autocomplete="email" />
+        <input type="hidden" name="_subject" value="Nueva suscripción al blog ReActiva Espalda" />
+        <button type="submit" id="newsletter-btn">Suscribirme</button>
+      </form>
+      <div id="newsletter-success" style="display:none;color:#1db86a;font-weight:600;font-size:.9rem;margin-top:12px;">
+        ✅ ¡Suscrito! Te avisaré cuando publique nuevos artículos.
+      </div>
+      <div id="newsletter-error" style="display:none;color:#fca5a5;font-size:.85rem;margin-top:12px;">
+        Ha habido un problema. Escríbeme a activatuespalda@gmail.com para suscribirte.
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <a href="index.html" class="footer-back" style="display:inline-flex;align-items:center;gap:6px;font-size:.88rem;color:var(--green-soft,#7ecba1);font-weight:500;text-decoration:none;margin-bottom:24px;">← Volver a ReActiva Espalda</a>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 ReActiva Espalda · Pau Sintes. Todos los derechos reservados.</p>
+      <nav class="footer-legal" aria-label="Páginas legales">
+        <a href="#">Privacidad</a>
+        <a href="#">Aviso legal</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nlForm = document.getElementById('newsletter-form');
+  if (nlForm) {
+    nlForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('newsletter-btn');
+      const ok = document.getElementById('newsletter-success');
+      const err = document.getElementById('newsletter-error');
+      btn.textContent = 'Enviando…';
+      btn.disabled = true;
+      ok.style.display = 'none';
+      err.style.display = 'none';
+      try {
+        const res = await fetch(nlForm.action, {
+          method: 'POST',
+          body: new FormData(nlForm),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          ok.style.display = 'block';
+          nlForm.reset();
+        } else { throw new Error(); }
+      } catch {
+        err.style.display = 'block';
+        btn.textContent = 'Suscribirme';
+        btn.disabled = false;
+      }
+    });
+  }
+</script>
+</body>
+</html>
