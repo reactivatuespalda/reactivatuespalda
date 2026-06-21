@@ -10,6 +10,15 @@
        Total URLs: 13 (excluidas páginas legales y noindex)
        ============================================= -->
 
+
+  <!-- CLUSTER 1 — Página pilar de ejercicios (mayor prioridad SEO) -->
+  <url>
+    <loc>https://www.reactivatuespalda.com/ejercicios-dolor-lumbar.html</loc>
+    <lastmod>2025-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
   <!-- HOME — Prioridad máxima -->
   <url>
     <loc>https://www.reactivatuespalda.com/</loc>
