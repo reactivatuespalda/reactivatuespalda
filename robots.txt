@@ -1,0 +1,14 @@
+# robots.txt — www.reactivatuespalda.com
+# Última actualización: 2025-06-21
+
+# Permitir a todos los crawlers
+User-agent: *
+Allow: /
+
+# Bloquear páginas legales (noindex, no tienen valor de rastreo)
+Disallow: /politica-privacidad.html
+Disallow: /aviso-legal.html
+Disallow: /politica-cookies.html
+
+# Sitemap
+Sitemap: https://www.reactivatuespalda.com/sitemap.xml
