@@ -195,26 +195,30 @@
 </head>
 <body>
 
-<nav id="navbar">
+<nav id="navbar" role="navigation" aria-label="Navegación principal">
   <div class="container">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo" aria-label="ReActiva Espalda - inicio">
         <div class="nav-logo-bars" aria-hidden="true">
-          <div class="bar bar-1"></div><div class="bar bar-2"></div>
+          <div class="bar bar-1"></div>
+          <div class="bar bar-2"></div>
           <div class="bar bar-3"><div class="bar-arrow"></div></div>
         </div>
         <div class="nav-divider" aria-hidden="true"></div>
         <span class="nav-name">Re<span>A</span>ctiva Espalda</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="https://forms.gle/dZmjnF6vH3vsxkxu6" target="_blank" rel="noopener">Test Gratuito</a></li>
-        <li><a href="sobre-pau-sintes.html" rel="author">Sobre mí</a></li>
-        <li><a href="programa.html" style="color:var(--green-bright,#1db86a);font-weight:700;">Programa</a></li>
+      <ul class="nav-links" role="list">
+        <li><a href="programa.html" style="color:var(--green-dark,#0d7a40);font-weight:700;">Programa</a></li>
+        <li><a href="dolor-lumbar-persistente.html">Dolor lumbar</a></li>
+        <li><a href="hernia-lumbar-ejercicio.html">Hernia</a></li>
+        <li><a href="ejercicios-espalda.html">Ejercicios</a></li>
+        <li><a href="ciatica-ejercicio-terapeutico.html">Ciática</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="index.html#contacto">Contacto</a></li>
+        <li><a href="sobre-pau-sintes.html">Sobre mí</a></li>
       </ul>
-      <a href="https://forms.gle/dZmjnF6vH3vsxkxu6" target="_blank" rel="noopener" class="nav-cta">Valoración gratuita</a>
+      <button class="nav-menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </nav>
@@ -237,7 +241,7 @@
           <div>
             <div class="meta-name">Pau Sintes</div>
             <div class="meta-cred">CAFE · Máster en AF y Salud (INEFC)</div>
-            <div class="meta-title">Especialista en ejercicio terapéutico · +8 años en readaptación lumbar</div>
+            <div class="meta-title">Especialista en ejercicio progresivo · +8 años en readaptación lumbar</div>
           </div>
         </div>
         <div class="meta-divider" aria-hidden="true"></div>
@@ -527,14 +531,73 @@
   </article>
 </main>
 
-<footer>
+<footer role="contentinfo">
   <div class="container">
-    <a href="blog.html" class="footer-back">← Volver al blog</a>
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2025 ReActiva Espalda · Pau Sintes. Todos los derechos reservados. · <a href="https://www.instagram.com/reactiva_espalda?igsh=MWZpMmN6cmh0ZTJ3OA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram @reactiva_espalda" style="color:rgba(255,255,255,.45);font-size:.8rem;text-decoration:none;">@reactiva_espalda</a></p>
-      <nav class="footer-legal" aria-label="Páginas legales">
-        <a href="politica-privacidad.html">Privacidad</a>
-        <a href="aviso-legal.html">Aviso legal</a>
+    <div class="footer-grid" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:28px;">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:4px;" aria-label="ReActiva Espalda">
+          <div class="nav-logo-bars" aria-hidden="true">
+            <div class="bar bar-1"></div><div class="bar bar-2"></div>
+            <div class="bar bar-3"><div class="bar-arrow"></div></div>
+          </div>
+          <div class="nav-divider" style="background:rgba(255,255,255,.15);" aria-hidden="true"></div>
+          <span class="nav-name" style="color:#fff;">Re<span>A</span>ctiva Espalda</span>
+        </a>
+        <p style="font-size:.8rem;color:rgba(255,255,255,.65);margin-top:10px;line-height:1.55;">Ejercicio progresivo para el dolor lumbar. Pau Sintes, CAFYD · Máster INEFC.</p>
+        <a href="https://wa.me/34690036625" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;background:#25D366;color:#fff;font-size:.8rem;font-weight:600;padding:8px 14px;border-radius:100px;text-decoration:none;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <nav class="footer-col" aria-label="Dolor lumbar">
+        <h4>Dolor lumbar</h4>
+        <ul role="list">
+          <li><a href="dolor-lumbar-persistente.html">Dolor lumbar persistente</a></li>
+          <li><a href="dolor-lumbar-cronico.html">Dolor lumbar crónico</a></li>
+          <li><a href="lumbalgia-causas.html">Causas de la lumbalgia</a></li>
+          <li><a href="miedo-movimiento-dolor-lumbar.html">Kinesiofobia</a></li>
+          <li><a href="dolor-lumbar-estres.html">Estrés y dolor</a></li>
+          <li><a href="aliviar-dolor-lumbar.html">Aliviar el dolor</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Hernia discal">
+        <h4>Hernia discal</h4>
+        <ul role="list">
+          <li><a href="hernia-lumbar-ejercicio.html">Hernia lumbar</a></li>
+          <li><a href="hernia-L4-L5-ejercicio.html">Hernia L4-L5</a></li>
+          <li><a href="hernia-L5-S1-ejercicio.html">Hernia L5-S1</a></li>
+          <li><a href="hernia-discal-ejercicios-prohibidos.html">Ejercicios prohibidos</a></li>
+          <li><a href="discopatia-lumbar.html">Discopatía lumbar</a></li>
+          <li><a href="ciatica-ejercicio-terapeutico.html">Ciática</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Ejercicios">
+        <h4>Ejercicios</h4>
+        <ul role="list">
+          <li><a href="ejercicios-dolor-lumbar.html">Ejercicios lumbar</a></li>
+          <li><a href="ejercicios-espalda.html">Ejercicios espalda</a></li>
+          <li><a href="estiramientos-dolor-lumbar.html">Estiramientos</a></li>
+          <li><a href="caminar-dolor-lumbar.html">Caminar</a></li>
+          <li><a href="correr-dolor-lumbar.html">Correr</a></li>
+          <li><a href="pilates-dolor-lumbar.html">Pilates</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Programa">
+        <h4>Programa</h4>
+        <ul role="list">
+          <li><a href="programa.html">Ver el programa</a></li>
+          <li><a href="sobre-pau-sintes.html">Sobre Pau Sintes</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="https://forms.gle/dZmjnF6vH3vsxkxu6" target="_blank" rel="noopener">Valoración gratuita</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;align-items:center;">
+      <p style="font-size:.76rem;color:rgba(255,255,255,.45);margin:0;">© 2025 ReActiva Espalda · Pau Sintes. Todos los derechos reservados.</p>
+      <nav style="display:flex;gap:14px;" aria-label="Legal">
+        <a href="politica-privacidad.html" style="font-size:.76rem;color:rgba(255,255,255,.45);text-decoration:none;">Privacidad</a>
+        <a href="aviso-legal.html" style="font-size:.76rem;color:rgba(255,255,255,.45);text-decoration:none;">Aviso legal</a>
+        <a href="politica-cookies.html" style="font-size:.76rem;color:rgba(255,255,255,.45);text-decoration:none;">Cookies</a>
       </nav>
     </div>
   </div>

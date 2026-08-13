@@ -180,23 +180,30 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 </head>
 <body>
-<nav id="navbar">
+<nav id="navbar" role="navigation" aria-label="Navegación principal">
   <div class="container">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo" aria-label="ReActiva Espalda - inicio">
-        <div class="nav-logo-bars" aria-hidden="true"><div class="bar bar-1"></div><div class="bar bar-2"></div><div class="bar bar-3"><div class="bar-arrow"></div></div></div>
+        <div class="nav-logo-bars" aria-hidden="true">
+          <div class="bar bar-1"></div>
+          <div class="bar bar-2"></div>
+          <div class="bar bar-3"><div class="bar-arrow"></div></div>
+        </div>
         <div class="nav-divider" aria-hidden="true"></div>
         <span class="nav-name">Re<span>A</span>ctiva Espalda</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="https://forms.gle/dZmjnF6vH3vsxkxu6" target="_blank" rel="noopener">Test Gratuito</a></li>
-        <li><a href="index.html#sobre-mi">Sobre mí</a></li>
-        <li><a href="programa.html" style="color:var(--green-bright,#1db86a);font-weight:700;">Programa</a></li>
+      <ul class="nav-links" role="list">
+        <li><a href="programa.html" style="color:var(--green-dark,#0d7a40);font-weight:700;">Programa</a></li>
+        <li><a href="dolor-lumbar-persistente.html">Dolor lumbar</a></li>
+        <li><a href="hernia-lumbar-ejercicio.html">Hernia</a></li>
+        <li><a href="ejercicios-espalda.html">Ejercicios</a></li>
+        <li><a href="ciatica-ejercicio-terapeutico.html">Ciática</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="index.html#contacto">Contacto</a></li>
+        <li><a href="sobre-pau-sintes.html">Sobre mí</a></li>
       </ul>
-      <a href="https://forms.gle/dZmjnF6vH3vsxkxu6" target="_blank" rel="noopener" class="nav-cta">Valoración gratuita</a>
+      <button class="nav-menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </nav>
@@ -313,7 +320,7 @@
     <h3>2. Exposición gradual al movimiento</h3>
     <p>El tratamiento más eficaz para el miedo es la exposición gradual y controlada a aquello que se teme. En kinesiofobia, esto significa <strong>empezar a hacer los movimientos evitados de forma progresiva</strong>, comprobando que no ocurre el daño que se anticipaba. Con cada exposición exitosa, el sistema nervioso aprende que el movimiento es seguro.</p>
 
-    <h3>3. <a href="ejercicios-dolor-lumbar.html" style="color:var(--green-dark,#0d7a40);text-decoration:underline;text-decoration-color:rgba(13,122,64,.35);text-underline-offset:2px;font-weight:inherit;transition:text-decoration-color .2s;">Ejercicio terapéutico</a> progresivo</h3>
+    <h3>3. <a href="ejercicios-dolor-lumbar.html" style="color:var(--green-dark,#0d7a40);text-decoration:underline;text-decoration-color:rgba(13,122,64,.35);text-underline-offset:2px;font-weight:inherit;transition:text-decoration-color .2s;">Ejercicio progresivo</a> progresivo</h3>
     <p>El ejercicio, además de sus efectos fisiológicos directos (fortalecimiento, flexibilidad), actúa como exposición al movimiento. Cada sesión en la que la persona se mueve y comprueba que puede hacerlo sin el daño que temía es, en sí misma, parte del tratamiento.</p>
 
     <h3>4. Reestructuración de creencias</h3>
@@ -350,7 +357,74 @@
   </div>
 
   <div class="container-narrow">
-    <div class="article-cta">
+    
+      <!-- EXPANSION kinesiofobia -->
+      <h2 id="como-superar">Cómo superar la kinesiofobia: el protocolo basado en evidencia</h2>
+      <p>La kinesiofobia no se supera evitando el movimiento — se supera exponiéndose a él de forma gradual y controlada. El enfoque con mayor evidencia es la <strong>terapia de exposición gradual</strong> (Graded Exposure in Vivo, GEXP), desarrollada por Vlaeyen y Linton.</p>
+
+      <p>El proceso sigue estos pasos:</p>
+
+      <div style="display:flex;flex-direction:column;gap:10px;margin:20px 0 32px;">
+        <div style="background:var(--bg,#f7faf8);border-radius:var(--radius-sm,8px);padding:14px 18px;border-left:3px solid var(--green-bright,#1db86a);">
+          <div style="font-family:'Sora',sans-serif;font-size:.92rem;font-weight:700;color:var(--ink,#1a1a1a);margin-bottom:4px;">Paso 1 — Identificar los movimientos temidos</div>
+          <p style="font-size:.87rem;color:var(--ink-60,#555f5b);line-height:1.65;margin:0;">Hacer una lista de actividades que evitas por miedo al dolor: agacharse, cargar peso, correr, sentarse mucho tiempo. No por daño real — por anticipación del dolor.</p>
+        </div>
+        <div style="background:var(--bg,#f7faf8);border-radius:var(--radius-sm,8px);padding:14px 18px;border-left:3px solid var(--green-bright,#1db86a);">
+          <div style="font-family:'Sora',sans-serif;font-size:.92rem;font-weight:700;color:var(--ink,#1a1a1a);margin-bottom:4px;">Paso 2 — Jerarquizar por nivel de amenaza percibida</div>
+          <p style="font-size:.87rem;color:var(--ink-60,#555f5b);line-height:1.65;margin:0;">Ordenar los movimientos del menos al más temido (0-100). Empezar por los que generan menos miedo — no por los que parecen más importantes.</p>
+        </div>
+        <div style="background:var(--bg,#f7faf8);border-radius:var(--radius-sm,8px);padding:14px 18px;border-left:3px solid var(--green-bright,#1db86a);">
+          <div style="font-family:'Sora',sans-serif;font-size:.92rem;font-weight:700;color:var(--ink,#1a1a1a);margin-bottom:4px;">Paso 3 — Exposición gradual con información correcta</div>
+          <p style="font-size:.87rem;color:var(--ink-60,#555f5b);line-height:1.65;margin:0;">Realizar el movimiento mientras se tiene presente que el dolor no equivale a daño. Cada exposición exitosa recalibra el sistema nervioso: "he hecho esto y no ha pasado nada malo".</p>
+        </div>
+        <div style="background:var(--bg,#f7faf8);border-radius:var(--radius-sm,8px);padding:14px 18px;border-left:3px solid var(--green-bright,#1db86a);">
+          <div style="font-family:'Sora',sans-serif;font-size:.92rem;font-weight:700;color:var(--ink,#1a1a1a);margin-bottom:4px;">Paso 4 — Progresar en la jerarquía</div>
+          <p style="font-size:.87rem;color:var(--ink-60,#555f5b);line-height:1.65;margin:0;">A medida que cada movimiento pierde su carga de amenaza, subir al siguiente nivel. El proceso es lento al principio y se acelera — cada éxito facilita el siguiente.</p>
+        </div>
+      </div>
+
+      <h2 id="tsk-test">La escala Tampa de kinesiofobia (TSK): cómo medirla</h2>
+      <p>La escala Tampa de kinesiofobia (TSK-11) es el instrumento validado más usado para cuantificar el miedo al movimiento. Consta de 11 ítems valorados del 1 al 4. Las puntuaciones más altas indican mayor kinesiofobia.</p>
+      <p>Una puntuación TSK ≥ 37/44 se considera kinesiofobia clínicamente relevante. En el programa <a href="programa.html" style="color:var(--green-dark,#0d7a40);text-decoration:underline;text-decoration-color:rgba(13,122,64,.35);text-underline-offset:2px;font-weight:inherit;">ReActiva Espalda</a> se evalúa en el inicio y en cada revisión periódica para medir el progreso real — no solo la reducción del dolor, sino la reducción del miedo.</p>
+
+      <h2 id="kinesiofobia-cronico">Kinesiofobia y dolor lumbar crónico: el bucle que hay que romper</h2>
+      <p>Existe un bucle bien documentado en la literatura (modelo fear-avoidance de Vlaeyen y Linton, 2000) que explica por qué el <a href="dolor-lumbar-cronico.html" style="color:var(--green-dark,#0d7a40);text-decoration:underline;text-decoration-color:rgba(13,122,64,.35);text-underline-offset:2px;font-weight:inherit;">dolor lumbar se cronifica</a>:</p>
+
+      <div style="background:var(--ink,#1a1a1a);border-radius:var(--radius-md,16px);padding:24px 28px;margin:20px 0 28px;max-width:600px;">
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div style="width:28px;height:28px;border-radius:50%;background:var(--green-dark,#0d7a40);display:flex;align-items:center;justify-content:center;color:#fff;font-size:.75rem;font-weight:700;flex-shrink:0;">1</div>
+            <p style="font-size:.9rem;color:rgba(255,255,255,.8);margin:0;">Experiencia de dolor → catastrofización ("algo está roto")</p>
+          </div>
+          <div style="width:2px;height:12px;background:var(--green-mid,#17a05c);margin-left:13px;"></div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div style="width:28px;height:28px;border-radius:50%;background:var(--green-dark,#0d7a40);display:flex;align-items:center;justify-content:center;color:#fff;font-size:.75rem;font-weight:700;flex-shrink:0;">2</div>
+            <p style="font-size:.9rem;color:rgba(255,255,255,.8);margin:0;">Catastrofización → kinesiofobia (miedo a moverse)</p>
+          </div>
+          <div style="width:2px;height:12px;background:var(--green-mid,#17a05c);margin-left:13px;"></div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div style="width:28px;height:28px;border-radius:50%;background:var(--green-dark,#0d7a40);display:flex;align-items:center;justify-content:center;color:#fff;font-size:.75rem;font-weight:700;flex-shrink:0;">3</div>
+            <p style="font-size:.9rem;color:rgba(255,255,255,.8);margin:0;">Kinesiofobia → evitación del movimiento</p>
+          </div>
+          <div style="width:2px;height:12px;background:var(--green-mid,#17a05c);margin-left:13px;"></div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div style="width:28px;height:28px;border-radius:50%;background:var(--green-bright,#1db86a);display:flex;align-items:center;justify-content:center;color:#fff;font-size:.75rem;font-weight:700;flex-shrink:0;">4</div>
+            <p style="font-size:.9rem;color:rgba(255,255,255,.8);margin:0;">Evitación → desacondicionamiento + más sensibilidad al dolor</p>
+          </div>
+          <div style="width:2px;height:12px;background:#b45309;margin-left:13px;"></div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div style="width:28px;height:28px;border-radius:50%;background:#b45309;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.75rem;font-weight:700;flex-shrink:0;">↩</div>
+            <p style="font-size:.9rem;color:rgba(255,255,255,.8);margin:0;font-weight:600;">Vuelta al punto 1 — el bucle se cierra y se cronifica</p>
+          </div>
+        </div>
+      </div>
+      <p>Romper este bucle requiere intervenir en dos frentes simultáneamente: educación sobre el dolor (cambiar la interpretación) y exposición gradual al movimiento (cambiar el comportamiento). Ninguno de los dos solo es suficiente.</p>
+
+      <h2 id="diferencia-dolor-dano">La diferencia entre dolor y daño: el concepto más importante</h2>
+      <p>El principio que más cambia la relación con el dolor lumbar crónico es entender que <strong>dolor y daño no son lo mismo</strong>. El dolor es una señal de alarma producida por el cerebro cuando percibe amenaza. No es un sensor de daño tisular directo.</p>
+      <p>Esto explica por qué personas con hernias graves no tienen dolor y personas con resonancias "normales" tienen dolor intenso. El sistema nervioso puede amplificar señales (sensibilización central) o modularlas (analgesia endógena) independientemente del estado del tejido.</p>
+      <p>Comprender esto no elimina el dolor de inmediato — pero cambia cómo lo interpretas. Y esa reinterpretación es el primer paso para salir del bucle fear-avoidance.</p>
+<div class="article-cta">
       <h3>¿El miedo al movimiento limita tu vida?</h3>
       <p>La valoración gratuita te ayuda a entender qué factores están influyendo en tu dolor. El primer paso es el más importante.</p>
       <a href="https://forms.gle/dZmjnF6vH3vsxkxu6" target="_blank" rel="noopener" class="btn-cta-big">Realizar valoración gratuita →</a>
@@ -388,7 +462,7 @@
     <p style="font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1db86a;margin-bottom:12px;">Más sobre dolor lumbar</p>
     <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;margin:0;padding:0;">
       <li><a href="dolor-lumbar-persistente.html" style="color:var(--green-dark,#0d7a40);font-weight:500;">Dolor lumbar persistente: qué es y por qué no mejora solo</a></li>
-      <li><a href="ciatica-ejercicio-terapeutico.html" style="color:var(--green-dark,#0d7a40);font-weight:500;">Ciática y ejercicio terapéutico: recupera sin miedo</a></li>
+      <li><a href="ciatica-ejercicio-terapeutico.html" style="color:var(--green-dark,#0d7a40);font-weight:500;">Ciática y ejercicio progresivo: recupera sin miedo</a></li>
       <li><a href="gestion-recaidas-dolor-lumbar.html" style="color:var(--green-dark,#0d7a40);font-weight:500;">Recaídas en el dolor lumbar: cómo gestionarlas sin pánico</a></li>
       <li><a href="programa-online-dolor-lumbar.html" style="color:var(--green-dark,#0d7a40);font-weight:500;">Programa online de readaptación lumbar con Pau Sintes</a></li>
       </ul>
@@ -401,12 +475,74 @@
 </nav>
 </main>
 
-<footer>
+<footer role="contentinfo">
   <div class="container">
-    <a href="blog.html" class="footer-back" style="display:inline-flex;align-items:center;gap:6px;font-size:.88rem;color:var(--green-soft,#7ecba1);font-weight:500;text-decoration:none;margin-bottom:24px;">← Volver al blog</a>
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2025 ReActiva Espalda · Pau Sintes. Todos los derechos reservados. · <a href="https://www.instagram.com/reactiva_espalda?igsh=MWZpMmN6cmh0ZTJ3OA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram @reactiva_espalda" style="color:rgba(255,255,255,.45);font-size:.8rem;text-decoration:none;display:inline-flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg> Instagram</a></p>
-      <nav class="footer-legal" aria-label="Páginas legales"><a href="politica-privacidad.html">Privacidad</a><a href="aviso-legal.html">Aviso legal</a></nav>
+    <div class="footer-grid" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:28px;">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:4px;" aria-label="ReActiva Espalda">
+          <div class="nav-logo-bars" aria-hidden="true">
+            <div class="bar bar-1"></div><div class="bar bar-2"></div>
+            <div class="bar bar-3"><div class="bar-arrow"></div></div>
+          </div>
+          <div class="nav-divider" style="background:rgba(255,255,255,.15);" aria-hidden="true"></div>
+          <span class="nav-name" style="color:#fff;">Re<span>A</span>ctiva Espalda</span>
+        </a>
+        <p style="font-size:.8rem;color:rgba(255,255,255,.65);margin-top:10px;line-height:1.55;">Ejercicio progresivo para el dolor lumbar. Pau Sintes, CAFYD · Máster INEFC.</p>
+        <a href="https://wa.me/34690036625" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;background:#25D366;color:#fff;font-size:.8rem;font-weight:600;padding:8px 14px;border-radius:100px;text-decoration:none;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <nav class="footer-col" aria-label="Dolor lumbar">
+        <h4>Dolor lumbar</h4>
+        <ul role="list">
+          <li><a href="dolor-lumbar-persistente.html">Dolor lumbar persistente</a></li>
+          <li><a href="dolor-lumbar-cronico.html">Dolor lumbar crónico</a></li>
+          <li><a href="lumbalgia-causas.html">Causas de la lumbalgia</a></li>
+          <li><a href="miedo-movimiento-dolor-lumbar.html">Kinesiofobia</a></li>
+          <li><a href="dolor-lumbar-estres.html">Estrés y dolor</a></li>
+          <li><a href="aliviar-dolor-lumbar.html">Aliviar el dolor</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Hernia discal">
+        <h4>Hernia discal</h4>
+        <ul role="list">
+          <li><a href="hernia-lumbar-ejercicio.html">Hernia lumbar</a></li>
+          <li><a href="hernia-L4-L5-ejercicio.html">Hernia L4-L5</a></li>
+          <li><a href="hernia-L5-S1-ejercicio.html">Hernia L5-S1</a></li>
+          <li><a href="hernia-discal-ejercicios-prohibidos.html">Ejercicios prohibidos</a></li>
+          <li><a href="discopatia-lumbar.html">Discopatía lumbar</a></li>
+          <li><a href="ciatica-ejercicio-terapeutico.html">Ciática</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Ejercicios">
+        <h4>Ejercicios</h4>
+        <ul role="list">
+          <li><a href="ejercicios-dolor-lumbar.html">Ejercicios lumbar</a></li>
+          <li><a href="ejercicios-espalda.html">Ejercicios espalda</a></li>
+          <li><a href="estiramientos-dolor-lumbar.html">Estiramientos</a></li>
+          <li><a href="caminar-dolor-lumbar.html">Caminar</a></li>
+          <li><a href="correr-dolor-lumbar.html">Correr</a></li>
+          <li><a href="pilates-dolor-lumbar.html">Pilates</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Programa">
+        <h4>Programa</h4>
+        <ul role="list">
+          <li><a href="programa.html">Ver el programa</a></li>
+          <li><a href="sobre-pau-sintes.html">Sobre Pau Sintes</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="https://forms.gle/dZmjnF6vH3vsxkxu6" target="_blank" rel="noopener">Valoración gratuita</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;align-items:center;">
+      <p style="font-size:.76rem;color:rgba(255,255,255,.45);margin:0;">© 2025 ReActiva Espalda · Pau Sintes. Todos los derechos reservados.</p>
+      <nav style="display:flex;gap:14px;" aria-label="Legal">
+        <a href="politica-privacidad.html" style="font-size:.76rem;color:rgba(255,255,255,.45);text-decoration:none;">Privacidad</a>
+        <a href="aviso-legal.html" style="font-size:.76rem;color:rgba(255,255,255,.45);text-decoration:none;">Aviso legal</a>
+        <a href="politica-cookies.html" style="font-size:.76rem;color:rgba(255,255,255,.45);text-decoration:none;">Cookies</a>
+      </nav>
     </div>
   </div>
 </footer>
