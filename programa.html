@@ -214,7 +214,72 @@
 .faq-answer{display:none;padding:0 0 18px;font-size:.93rem;color:var(--ink-60,#555f5b);line-height:1.78}
 .faq-item.open .faq-answer{display:block}
 .faq-item.open .faq-icon{background:var(--green-dark,#0d7a40);color:#fff;transform:rotate(45deg)}
-</style>
+
+    /* ── Nav dropdown (artículos) ── */
+    .nav-links { list-style:none; padding:0; margin:0; }
+    .nav-links > li { list-style:none; }
+    .nav-dropdown { position:relative; }
+    .nav-dropdown > a { cursor:pointer; }
+    .nav-sub {
+      display:none;
+      position:absolute;
+      top:calc(100% + 8px);
+      left:0;
+      background:#fff;
+      border:1px solid rgba(29,184,106,.15);
+      border-radius:10px;
+      box-shadow:0 8px 32px rgba(0,0,0,.12);
+      min-width:210px;
+      padding:6px 0;
+      z-index:500;
+      list-style:none;
+      margin:0;
+    }
+    .nav-dropdown:hover .nav-sub,
+    .nav-dropdown:focus-within .nav-sub { display:block; }
+    .nav-sub li { list-style:none; }
+    .nav-sub li a {
+      display:block;
+      padding:8px 16px;
+      font-size:.84rem;
+      color:var(--ink,#1a1a1a);
+      text-decoration:none;
+      white-space:nowrap;
+    }
+    .nav-sub li a:hover { background:var(--green-xpale,#f2fbf6); color:var(--green-dark,#0d7a40); }
+    .nav-cta-btn {
+      display:inline-flex;
+      align-items:center;
+      background:var(--green-dark,#0d7a40);
+      color:#fff !important;
+      font-size:.82rem !important;
+      font-weight:700 !important;
+      padding:8px 16px;
+      border-radius:100px;
+      text-decoration:none !important;
+      white-space:nowrap;
+    }
+    .nav-cta-btn:hover { background:var(--green-mid,#17a05c) !important; color:#fff !important; }
+    /* ── Article H1 ── */
+    .article-hero h1 {
+      font-family:'Sora',sans-serif;
+      font-size:clamp(1.9rem,4vw,2.8rem) !important;
+      font-weight:800 !important;
+      color:var(--ink,#1a1a1a) !important;
+      line-height:1.15 !important;
+      letter-spacing:-.02em;
+      margin:0 0 20px !important;
+    }
+  
+    /* Fix nav bullets */
+    .nav-links, .nav-links li, .nav-sub, .nav-sub li {
+      list-style: none !important;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links > li { list-style: none !important; }
+  </style>
 </head>
 <body>
 
@@ -232,16 +297,42 @@
       </a>
       <ul class="nav-links" role="list">
         <li><a href="programa.html" style="color:var(--green-dark,#0d7a40);font-weight:700;">Programa</a></li>
-        <li><a href="dolor-lumbar-persistente.html">Dolor lumbar</a></li>
-        <li><a href="hernia-lumbar-ejercicio.html">Hernia</a></li>
-        <li><a href="ejercicios-espalda.html">Ejercicios</a></li>
+        <li class="nav-dropdown">
+          <a href="dolor-lumbar-persistente.html">Dolor lumbar ▾</a>
+          <ul class="nav-sub" role="list">
+            <li><a href="dolor-lumbar-persistente.html">Dolor lumbar persistente</a></li>
+            <li><a href="dolor-lumbar-cronico.html">Dolor lumbar crónico</a></li>
+            <li><a href="lumbalgia-causas.html">Causas de la lumbalgia</a></li>
+            <li><a href="dolor-lumbar-estres.html">Estrés y dolor lumbar</a></li>
+            <li><a href="miedo-movimiento-dolor-lumbar.html">Kinesiofobia</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <a href="hernia-lumbar-ejercicio.html">Hernia ▾</a>
+          <ul class="nav-sub" role="list">
+            <li><a href="hernia-lumbar-ejercicio.html">Hernia lumbar</a></li>
+            <li><a href="hernia-L4-L5-ejercicio.html">Hernia L4-L5</a></li>
+            <li><a href="hernia-L5-S1-ejercicio.html">Hernia L5-S1</a></li>
+            <li><a href="hernia-discal-ejercicios-prohibidos.html">Ejercicios prohibidos</a></li>
+            <li><a href="discopatia-lumbar.html">Discopatía lumbar</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <a href="ejercicios-espalda.html">Ejercicios ▾</a>
+          <ul class="nav-sub" role="list">
+            <li><a href="ejercicios-dolor-lumbar.html">Ejercicios dolor lumbar</a></li>
+            <li><a href="ejercicios-espalda.html">Ejercicios dolor de espalda</a></li>
+            <li><a href="estiramientos-dolor-lumbar.html">Estiramientos</a></li>
+            <li><a href="caminar-dolor-lumbar.html">Caminar</a></li>
+            <li><a href="correr-dolor-lumbar.html">Correr</a></li>
+            <li><a href="pilates-dolor-lumbar.html">Pilates</a></li>
+          </ul>
+        </li>
         <li><a href="ciatica-ejercicio-terapeutico.html">Ciática</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="sobre-pau-sintes.html">Sobre mí</a></li>
+        <li><a href="https://forms.gle/dZmjnF6vH3vsxkxu6" target="_blank" rel="noopener" class="nav-cta-btn">Valoración gratuita</a></li>
       </ul>
-      <button class="nav-menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </div>
 </nav>
