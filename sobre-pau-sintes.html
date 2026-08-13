@@ -156,6 +156,24 @@
     }
     .nav-links { display: flex; gap: 28px; align-items: center; }
     .nav-links > li { list-style: none !important; }
+  
+    /* ── Dropdown gap fix ── */
+    .nav-dropdown { position:relative; }
+    .nav-dropdown > a { display:flex; align-items:center; gap:2px; }
+    /* Invisible bridge so mouse doesn't lose hover */
+    .nav-dropdown::after {
+      content:'';
+      position:absolute;
+      top:100%;
+      left:0;
+      width:100%;
+      height:12px;
+      background:transparent;
+    }
+    .nav-sub {
+      top:calc(100% + 10px) !important;
+      margin-top:0 !important;
+    }
   </style>
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Pau Sintes — Especialista en Ejercicio progresivo Lumbar | ReActiva E" />
@@ -339,16 +357,59 @@
       <div class="about-photo-wrap">
         <img src="pau-sintes-foto.jpg"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-             alt="Pau Sintes, especialista en ejercicio progresivo y readaptación física para dolor lumbar"
+             alt="Pau Sintes, entrenador especializado en readaptación lumbar"
              class="about-photo" />
-        <!-- Fallback if no external photo -->
-        <div style="display:none;width:100%;aspect-ratio:4/5;background:var(--green-pale);border-radius:var(--radius-lg);align-items:center;justify-content:center;flex-direction:column;gap:12px;">
-          <span style="font-size:5rem;opacity:.4">👤</span>
-          <span style="font-size:.9rem;color:var(--green-soft);text-align:center">Foto de Pau Sintes</span>
-        </div>
-        <div class="about-badge" aria-label="Más de 8 años de experiencia">
-          <span class="badge-num">+8</span>
-          <span class="badge-lbl">años de experiencia</span>
+        <!-- Fallback illustration -->
+        <div style="display:flex;width:100%;aspect-ratio:4/5;background:linear-gradient(140deg,#f7faf8 0%,#e8f7ef 60%,#f2fbf6 100%);border-radius:var(--radius-lg,20px);align-items:center;justify-content:center;flex-direction:column;gap:8px;padding:20px;box-shadow:0 8px 32px rgba(0,0,0,.08);">
+          <svg class="hero-illustration" viewBox="0 0 440 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración de persona haciendo ejercicio progresivo">
+          <!-- Background circle -->
+          <circle cx="220" cy="260" r="210" fill="#e8f7ef" opacity=".6"/>
+          <circle cx="220" cy="260" r="160" fill="#d4f0e3" opacity=".4"/>
+
+          <!-- Ground line -->
+          <rect x="40" y="430" width="360" height="4" rx="2" fill="#7ecba1" opacity=".4"/>
+
+          <!-- Body - standing figure in gentle stretch pose -->
+          <!-- Legs -->
+          <line x1="200" y1="340" x2="175" y2="430" stroke="#0d7a40" stroke-width="14" stroke-linecap="round"/>
+          <line x1="240" y1="340" x2="265" y2="430" stroke="#0d7a40" stroke-width="14" stroke-linecap="round"/>
+          <!-- Feet -->
+          <ellipse cx="175" cy="433" rx="20" ry="7" fill="#1db86a"/>
+          <ellipse cx="265" cy="433" rx="20" ry="7" fill="#1db86a"/>
+
+          <!-- Torso -->
+          <rect x="185" y="230" width="70" height="115" rx="20" fill="#17a05c"/>
+
+          <!-- Arms - raised in gentle pose -->
+          <line x1="185" y1="265" x2="120" y2="220" stroke="#0d7a40" stroke-width="13" stroke-linecap="round"/>
+          <line x1="255" y1="265" x2="330" y2="210" stroke="#0d7a40" stroke-width="13" stroke-linecap="round"/>
+          <!-- Hands -->
+          <circle cx="118" cy="217" r="12" fill="#1db86a"/>
+          <circle cx="332" cy="207" r="12" fill="#1db86a"/>
+
+          <!-- Head -->
+          <circle cx="220" cy="195" r="42" fill="#1db86a"/>
+          <!-- Face - subtle smile -->
+          <circle cx="207" cy="190" r="4" fill="#0d7a40" opacity=".6"/>
+          <circle cx="233" cy="190" r="4" fill="#0d7a40" opacity=".6"/>
+          <path d="M210 207 Q220 216 230 207" stroke="#0d7a40" stroke-width="3" stroke-linecap="round" fill="none" opacity=".7"/>
+
+          <!-- Spine indicator glow (the brand element - the back) -->
+          <rect x="216" y="232" width="8" height="108" rx="4" fill="white" opacity=".3"/>
+
+          <!-- Motion lines -->
+          <path d="M100 200 Q90 195 85 188" stroke="#7ecba1" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
+          <path d="M95 215 Q82 212 76 206" stroke="#7ecba1" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+          <path d="M340 190 Q352 185 357 178" stroke="#7ecba1" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
+          <path d="M345 205 Q358 202 364 196" stroke="#7ecba1" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+
+          <!-- Floating elements -->
+          <rect x="60" y="120" width="56" height="56" rx="16" fill="#0d7a40" opacity=".08"/>
+          <text x="88" y="153" text-anchor="middle" font-size="24">🏃</text>
+          <rect x="320" y="100" width="56" height="56" rx="16" fill="#1db86a" opacity=".1"/>
+          <text x="348" y="133" text-anchor="middle" font-size="24">✨</text>
+        </svg>
+          <p style="font-size:.8rem;color:var(--ink-60,#555f5b);margin:8px 0 0;font-style:italic;">Foto de Pau Sintes</p>
         </div>
       </div>
 
@@ -672,5 +733,28 @@
   </svg>
 </a>
 
+<script>
+/* Dropdown keep-alive fix */
+(function(){
+  var timers = {};
+  document.querySelectorAll('.nav-dropdown').forEach(function(el, i){
+    el.addEventListener('mouseenter', function(){ clearTimeout(timers[i]); });
+    el.addEventListener('mouseleave', function(){
+      timers[i] = setTimeout(function(){ }, 0);
+    });
+    var sub = el.querySelector('.nav-sub');
+    if(sub){
+      el.addEventListener('mouseenter', function(){ sub.style.display='block'; });
+      el.addEventListener('mouseleave', function(){
+        timers[i] = setTimeout(function(){ sub.style.display=''; }, 80);
+      });
+      sub.addEventListener('mouseenter', function(){ clearTimeout(timers[i]); sub.style.display='block'; });
+      sub.addEventListener('mouseleave', function(){
+        timers[i] = setTimeout(function(){ sub.style.display=''; }, 80);
+      });
+    }
+  });
+})();
+</script>
 </body>
 </html>

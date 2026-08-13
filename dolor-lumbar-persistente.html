@@ -172,6 +172,24 @@
     }
     .nav-links { display: flex; gap: 28px; align-items: center; }
     .nav-links > li { list-style: none !important; }
+  
+    /* ── Dropdown gap fix ── */
+    .nav-dropdown { position:relative; }
+    .nav-dropdown > a { display:flex; align-items:center; gap:2px; }
+    /* Invisible bridge so mouse doesn't lose hover */
+    .nav-dropdown::after {
+      content:'';
+      position:absolute;
+      top:100%;
+      left:0;
+      width:100%;
+      height:12px;
+      background:transparent;
+    }
+    .nav-sub {
+      top:calc(100% + 10px) !important;
+      margin-top:0 !important;
+    }
   </style>
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Dolor Lumbar Persistente: Causas, Ejercicio y Recuperación | ReActiva " />
@@ -659,5 +677,28 @@
   </svg>
 </a>
 
+<script>
+/* Dropdown keep-alive fix */
+(function(){
+  var timers = {};
+  document.querySelectorAll('.nav-dropdown').forEach(function(el, i){
+    el.addEventListener('mouseenter', function(){ clearTimeout(timers[i]); });
+    el.addEventListener('mouseleave', function(){
+      timers[i] = setTimeout(function(){ }, 0);
+    });
+    var sub = el.querySelector('.nav-sub');
+    if(sub){
+      el.addEventListener('mouseenter', function(){ sub.style.display='block'; });
+      el.addEventListener('mouseleave', function(){
+        timers[i] = setTimeout(function(){ sub.style.display=''; }, 80);
+      });
+      sub.addEventListener('mouseenter', function(){ clearTimeout(timers[i]); sub.style.display='block'; });
+      sub.addEventListener('mouseleave', function(){
+        timers[i] = setTimeout(function(){ sub.style.display=''; }, 80);
+      });
+    }
+  });
+})();
+</script>
 </body>
 </html>
