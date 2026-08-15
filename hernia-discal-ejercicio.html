@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ejercicios <a href="hernia-L4-L5-ejercicio.html" style="color:var(--green-dark,#0d7a40);text-decoration:underline;text-decoration-color:rgba(13,122,64,.35);text-underline-offset:2px;font-weight:inherit;">hernia L4-<a href="hernia-L5-S1-ejercicio.html" style="color:var(--green-dark,#0d7a40);text-decoration:underline;text-decoration-color:rgba(13,122,64,.35);text-underline-offset:2px;font-weight:inherit;">hernia L5-S1</a></a> Discal: Lo Que Dice la Ciencia | ReActiva Espalda</title>
-  <meta name="description" content="¿Puedes hacer ejercicio con hernia discal? La evidencia dice que sí. Estudio SPORT, Cochrane y más. Por Pau Sintes, CAFE · Máster INEFC." />
+  <title>Hernia Discal y Entrenamiento de Fuerza: Lo Que Dice la Ciencia | ReActiva Espalda</title>
+  <meta name="description" content="¿Puedes entrenar fuerza con hernia discal? Sí, con el enfoque correcto. Evidencia científica, ejercicios adaptados y criterios de selección de carga. Pau Sintes, CAFYD · Máster INEFC." />
   <link rel="canonical" href="https://www.reactivatuespalda.com/hernia-discal-ejercicio.html" />
   <meta property="og:title" content="Hernia Lumbar y Ejercicio: Qué Dice la Evidencia Científica" />
   <meta property="og:description" content="¿Puedes hacer ejercicio con hernia discal? La evidencia dice que sí. Estudio SPORT, Cochrane y más. Por Pau Sintes, CAFE · Máster INEFC." />
@@ -97,6 +97,89 @@
     .footer-legal{display:flex;gap:20px}.footer-legal a{font-size:.78rem;color:rgba(255,255,255,.3)}
     .footer-back{font-size:.88rem;color:var(--green-soft);font-weight:500;display:inline-flex;align-items:center;gap:6px;margin-bottom:24px}
     .footer-back:hover{color:#fff}
+  
+    /* ── Nav dropdown (artículos) ── */
+    .nav-links { list-style:none; padding:0; margin:0; }
+    .nav-links > li { list-style:none; }
+    .nav-dropdown { position:relative; }
+    .nav-dropdown > a { cursor:pointer; }
+    .nav-sub {
+      display:none;
+      position:absolute;
+      top:calc(100% + 8px);
+      left:0;
+      background:#fff;
+      border:1px solid rgba(29,184,106,.15);
+      border-radius:10px;
+      box-shadow:0 8px 32px rgba(0,0,0,.12);
+      min-width:210px;
+      padding:6px 0;
+      z-index:500;
+      list-style:none;
+      margin:0;
+    }
+    .nav-dropdown:hover .nav-sub,
+    .nav-dropdown:focus-within .nav-sub { display:block; }
+    .nav-sub li { list-style:none; }
+    .nav-sub li a {
+      display:block;
+      padding:8px 16px;
+      font-size:.84rem;
+      color:var(--ink,#1a1a1a);
+      text-decoration:none;
+      white-space:nowrap;
+    }
+    .nav-sub li a:hover { background:var(--green-xpale,#f2fbf6); color:var(--green-dark,#0d7a40); }
+    .nav-cta-btn {
+      display:inline-flex;
+      align-items:center;
+      background:var(--green-dark,#0d7a40);
+      color:#fff !important;
+      font-size:.82rem !important;
+      font-weight:700 !important;
+      padding:8px 16px;
+      border-radius:100px;
+      text-decoration:none !important;
+      white-space:nowrap;
+    }
+    .nav-cta-btn:hover { background:var(--green-mid,#17a05c) !important; color:#fff !important; }
+    /* ── Article H1 ── */
+    .article-hero h1 {
+      font-family:'Sora',sans-serif;
+      font-size:clamp(1.9rem,4vw,2.8rem) !important;
+      font-weight:800 !important;
+      color:var(--ink,#1a1a1a) !important;
+      line-height:1.15 !important;
+      letter-spacing:-.02em;
+      margin:0 0 20px !important;
+    }
+  
+    /* Fix nav bullets */
+    .nav-links, .nav-links li, .nav-sub, .nav-sub li {
+      list-style: none !important;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links > li { list-style: none !important; }
+  
+    /* ── Dropdown gap fix ── */
+    .nav-dropdown { position:relative; }
+    .nav-dropdown > a { display:flex; align-items:center; gap:2px; }
+    /* Invisible bridge so mouse doesn't lose hover */
+    .nav-dropdown::after {
+      content:'';
+      position:absolute;
+      top:100%;
+      left:0;
+      width:100%;
+      height:12px;
+      background:transparent;
+    }
+    .nav-sub {
+      top:calc(100% + 10px) !important;
+      margin-top:0 !important;
+    }
   </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDHMB0W72E"></script>
@@ -171,6 +254,12 @@
           "text": "Sí, con la progresión adecuada. El entrenamiento de fuerza es beneficioso para la columna lumbar porque mejora la musculatura estabilizadora. Se empieza con cargas bajas y técnica controlada, progresando gradualmente conforme mejora la tolerancia."
         }
       }
+    ,
+      {"@type":"Question","name":"¿Puedo hacer pesas con una hernia discal?","acceptedAnswer":{"@type":"Answer","text":"Sí. El entrenamiento con pesas es compatible con la hernia discal en la mayoría de casos. La clave es la dosis: empezar con cargas bajas, progresar gradualmente y guiarse por la respuesta del cuerpo. La hernia discal no hace la columna frágil ni contraindica el ejercicio de fuerza."}},
+      {"@type":"Question","name":"¿Es bueno hacer fuerza con una hernia lumbar?","acceptedAnswer":{"@type":"Answer","text":"Sí. El entrenamiento de fuerza progresivo mejora la tolerancia a la carga, reduce el dolor a medio plazo y recupera la función. No existe evidencia que indique que el ejercicio de fuerza empeore el pronóstico de la hernia discal."}},
+      {"@type":"Question","name":"¿Puedo hacer sentadillas con una hernia discal?","acceptedAnswer":{"@type":"Answer","text":"En muchos casos sí, adaptando la variante, el rango o la carga. La sentadilla goblet o en caja suelen ser buenos puntos de entrada. La decisión depende de síntomas, tolerancia y experiencia previa — no del diagnóstico por imagen."}},
+      {"@type":"Question","name":"¿Puedo hacer peso muerto con una hernia discal?","acceptedAnswer":{"@type":"Answer","text":"El patrón de bisagra de cadera es uno de los más útiles en la readaptación lumbar. El peso muerto rumano con carga progresiva suele tolerarse bien. El peso muerto convencional con carga alta puede incorporarse en fases avanzadas. No es un ejercicio prohibido — requiere progresión adecuada."}},
+      {"@type":"Question","name":"¿Puedo ir al gimnasio con hernia L5-S1?","acceptedAnswer":{"@type":"Answer","text":"Sí. El gimnasio ofrece gran variedad de ejercicios adaptables. El nivel L5-S1 no modifica los principios generales del entrenamiento — puede orientar qué variantes son más toleradas en las primeras fases y qué síntomas monitorizar."}}
     ]
   }
   </script>
@@ -194,16 +283,42 @@
       </a>
       <ul class="nav-links" role="list">
         <li><a href="programa.html" style="color:var(--green-dark,#0d7a40);font-weight:700;">Programa</a></li>
-        <li><a href="dolor-lumbar-persistente.html">Dolor lumbar</a></li>
-        <li><a href="hernia-lumbar-ejercicio.html">Hernia</a></li>
-        <li><a href="ejercicios-espalda.html">Ejercicios</a></li>
+        <li class="nav-dropdown">
+          <a href="dolor-lumbar-persistente.html">Dolor lumbar ▾</a>
+          <ul class="nav-sub" role="list">
+            <li><a href="dolor-lumbar-persistente.html">Dolor lumbar persistente</a></li>
+            <li><a href="dolor-lumbar-cronico.html">Dolor lumbar crónico</a></li>
+            <li><a href="lumbalgia-causas.html">Causas de la lumbalgia</a></li>
+            <li><a href="dolor-lumbar-estres.html">Estrés y dolor lumbar</a></li>
+            <li><a href="miedo-movimiento-dolor-lumbar.html">Kinesiofobia</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <a href="hernia-lumbar-ejercicio.html">Hernia ▾</a>
+          <ul class="nav-sub" role="list">
+            <li><a href="hernia-lumbar-ejercicio.html">Hernia lumbar</a></li>
+            <li><a href="hernia-L4-L5-ejercicio.html">Hernia L4-L5</a></li>
+            <li><a href="hernia-L5-S1-ejercicio.html">Hernia L5-S1</a></li>
+            <li><a href="hernia-discal-ejercicios-prohibidos.html">Ejercicios prohibidos</a></li>
+            <li><a href="discopatia-lumbar.html">Discopatía lumbar</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <a href="ejercicios-espalda.html">Ejercicios ▾</a>
+          <ul class="nav-sub" role="list">
+            <li><a href="ejercicios-dolor-lumbar.html">Ejercicios dolor lumbar</a></li>
+            <li><a href="ejercicios-espalda.html">Ejercicios dolor de espalda</a></li>
+            <li><a href="estiramientos-dolor-lumbar.html">Estiramientos</a></li>
+            <li><a href="caminar-dolor-lumbar.html">Caminar</a></li>
+            <li><a href="correr-dolor-lumbar.html">Correr</a></li>
+            <li><a href="pilates-dolor-lumbar.html">Pilates</a></li>
+          </ul>
+        </li>
         <li><a href="ciatica-ejercicio-terapeutico.html">Ciática</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="sobre-pau-sintes.html">Sobre mí</a></li>
+        <li><a href="https://forms.gle/dZmjnF6vH3vsxkxu6" target="_blank" rel="noopener" class="nav-cta-btn">Valoración gratuita</a></li>
       </ul>
-      <button class="nav-menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </div>
 </nav>
@@ -332,7 +447,181 @@
 
     <p>Esto implica entender qué está pasando, comprometerse con el proceso de ejercicio, y desarrollar gradualmente la confianza en el propio cuerpo. No es un camino rápido, pero sí es el más sólido y duradero.</p>
 
-    <div class="sources">
+    
+    <!-- BLOQUE FUERZA — SEO fuerza hernia -->
+    <h2 id="entrenamiento-fuerza-hernia">¿Es bueno entrenar fuerza con una hernia discal?</h2>
+    <p>Sí. No solo es posible — en la mayoría de casos es parte central de la recuperación. La evidencia disponible muestra que el entrenamiento de fuerza progresivo mejora la función, reduce el dolor y aumenta la tolerancia al movimiento en personas con hernia discal lumbar. Tener una hernia visible en la resonancia no significa que la columna sea frágil ni que el ejercicio esté contraindicado.</p>
+
+    <div class="callout" role="note" style="background:var(--green-xpale,#f2fbf6);border-left:4px solid var(--green-bright,#1db86a);border-radius:0 8px 8px 0;padding:16px 20px;margin:20px 0 28px;">
+      <strong>Lo que muestra la evidencia:</strong> Brinjikji et al. (2015) documentaron que el 76% de los adultos asintomáticos de 20 años ya tienen cambios discales visibles en resonancia. La presencia de una hernia no predice el dolor ni la capacidad funcional. Lo que sí predice la recuperación es la actividad física progresiva supervisada — no el reposo ni la evitación.
+    </div>
+
+    <h3>¿Puede una persona con hernia discal hacer entrenamiento de fuerza?</h3>
+    <p>En la mayoría de casos, sí. La clave no es el diagnóstico en sí, sino el momento, la dosificación y la progresión. Una persona con hernia discal en fase aguda intensa puede necesitar empezar desde cargas muy bajas y rangos reducidos. Otra persona con la misma imagen radiológica pero sin síntomas agudos puede tolerar sesiones de fuerza estructuradas desde el primer momento.</p>
+    <p>Los principios que guían la decisión son los mismos que para cualquier persona que entrena con dolor: <strong>respetar la tolerancia actual, progresar gradualmente y orientar el entrenamiento hacia la función</strong>, no hacia la perfección técnica ni hacia ningún concepto biomecánico rígido.</p>
+
+    <h3>Beneficios del entrenamiento de fuerza con hernia discal</h3>
+    <div style="display:flex;flex-direction:column;gap:9px;margin:14px 0 26px;">
+      <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 16px;background:var(--bg,#f7faf8);border-radius:8px;">
+        <span style="font-size:1.1rem;flex-shrink:0;">💪</span>
+        <div><strong style="font-size:.9rem;color:var(--ink,#1a1a1a);">Aumento de la tolerancia a la carga</strong><p style="font-size:.85rem;color:var(--ink-60,#555f5b);margin:3px 0 0;line-height:1.6;">El tejido muscular, tendinoso y articular se adapta al estímulo mecánico. Progresar gradualmente amplía la capacidad de la columna para absorber y distribuir fuerzas en las actividades cotidianas.</p></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 16px;background:var(--bg,#f7faf8);border-radius:8px;">
+        <span style="font-size:1.1rem;flex-shrink:0;">🧠</span>
+        <div><strong style="font-size:.9rem;color:var(--ink,#1a1a1a);">Reducción del miedo al movimiento</strong><p style="font-size:.85rem;color:var(--ink-60,#555f5b);margin:3px 0 0;line-height:1.6;">Cada repetición realizada sin las consecuencias temidas actualiza la percepción de amenaza del sistema nervioso. El movimiento progresivo desensibiliza — el reposo prolongado hace lo contrario.</p></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 16px;background:var(--bg,#f7faf8);border-radius:8px;">
+        <span style="font-size:1.1rem;flex-shrink:0;">📉</span>
+        <div><strong style="font-size:.9rem;color:var(--ink,#1a1a1a);">Reducción del dolor a medio plazo</strong><p style="font-size:.85rem;color:var(--ink-60,#555f5b);margin:3px 0 0;line-height:1.6;">El ejercicio de fuerza activa mecanismos de modulación del dolor (inhibición condicionada del dolor, liberación de opioides endógenos) que producen analgesia sistémica. No es un efecto inmediato — emerge con la consistencia.</p></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 16px;background:var(--bg,#f7faf8);border-radius:8px;">
+        <span style="font-size:1.1rem;flex-shrink:0;">🔄</span>
+        <div><strong style="font-size:.9rem;color:var(--ink,#1a1a1a);">Recuperación de la función</strong><p style="font-size:.85rem;color:var(--ink-60,#555f5b);margin:3px 0 0;line-height:1.6;">Levantar una bolsa, agacharse, levantarse del suelo, trabajar de pie. Estas actividades requieren fuerza. El entrenamiento de fuerza no solo reduce el dolor — reconstruye la capacidad para hacer lo que importa.</p></div>
+      </div>
+    </div>
+
+    <h3>Cómo empezar a entrenar fuerza con hernia discal</h3>
+    <p>No existe un único punto de partida universal. El nivel de inicio depende de varios factores individuales:</p>
+    <ul style="display:flex;flex-direction:column;gap:5px;margin:8px 0 20px;">
+      <li><strong>Intensidad y patrón del dolor actual</strong> — no es lo mismo un dolor 2/10 difuso que un dolor 8/10 con irradiación activa</li>
+      <li><strong>Experiencia previa con el ejercicio</strong> — alguien que entrenaba regularmente antes de la hernia tiene un punto de partida diferente a alguien sedentario</li>
+      <li><strong>Tolerancia al movimiento</strong> — qué posiciones y gestos generan síntomas y cuáles no</li>
+      <li><strong>Objetivos</strong> — no es lo mismo querer volver a correr que querer poder trabajar sin dolor</li>
+      <li><strong>Respuesta al ejercicio</strong> — cómo reacciona el cuerpo en las 24-48 horas posteriores a cada sesión</li>
+    </ul>
+    <p>El principio práctico es empezar desde donde estás — no desde donde crees que deberías estar. Una primera sesión puede ser simplemente caminar 15 minutos, hacer puentes de glúteos en el suelo y algo de movilidad. Lo que importa es empezar y observar cómo responde el cuerpo.</p>
+
+    <h3>Cómo elegir la carga en el entrenamiento con hernia discal</h3>
+    <p>La carga no se elige en función del diagnóstico. Se elige en función de la tolerancia. Una guía práctica:</p>
+    <div style="overflow-x:auto;margin:12px 0 24px;">
+      <table class="summary-table" role="table" aria-label="Criterios selección de carga entrenamiento hernia discal">
+        <thead><tr><th>Indicador</th><th class="th-green">Qué hacer</th></tr></thead>
+        <tbody>
+          <tr><td>Dolor en reposo ≥ 6/10</td><td>Priorizar movilidad suave y aeróbico de baja intensidad. Posponer carga hasta que el dolor baje.</td></tr>
+          <tr><td>Dolor tolerable (2-5/10) que no aumenta con el movimiento</td><td>Empezar con cargas muy bajas (peso corporal o poco más). Observar respuesta 24h.</td></tr>
+          <tr><td>Dolor leve o ausente con el movimiento</td><td>Introducir progresión de carga sistemática. Guiarse por la tolerancia, no por la imagen radiológica.</td></tr>
+          <tr><td>Aumento del dolor >2 puntos durante el ejercicio que no cede</td><td>Reducir carga o rango. No interrumpir el ejercicio de forma definitiva.</td></tr>
+          <tr><td>Síntomas neurológicos que aumentan (más irradiación, más hormigueo)</td><td>Detener ese ejercicio y consultar antes de continuar.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>¿Es normal notar molestias durante el ejercicio?</h3>
+    <p>Sí, hasta cierto punto. Una molestia leve (2-3/10) que no aumenta durante el ejercicio y que desaparece en las horas siguientes es habitual al empezar a entrenar con hernia discal. No indica daño. Lo que merece atención es el dolor que escala progresivamente durante la sesión, que persiste más de 24 horas con una intensidad mayor que la habitual, o cualquier cambio en los síntomas neurológicos (sensación de mayor irradiación, pérdida de fuerza).</p>
+
+    <h2 id="ejercicios-fuerza-hernia">Ejercicios de fuerza en personas con hernia discal</h2>
+    <p>Lo que sigue son ejemplos de ejercicios que habitualmente aparecen en protocolos de readaptación para hernia discal. <strong>Ninguno de ellos es obligatorio ni universalmente adecuado</strong> para todas las personas. La selección final depende siempre de los factores individuales descritos más arriba.</p>
+
+    <div class="exercise-card">
+      <div class="exercise-name">Sentadilla y variantes</div>
+      <div class="exercise-badges"><span class="badge badge-green">Cadena anterior y posterior</span><span class="badge badge-blue">Progresable en múltiples variantes</span></div>
+      <p class="exercise-desc">La sentadilla goblet (con peso en el pecho) o la sentadilla en caja suelen tolerarse bien porque facilitan un torso más erguido y reducen la demanda sobre la columna lumbar comparado con la sentadilla con barra detrás. No se trata de que "una variante sea más segura que otra" — se trata de encontrar la variante que el individuo tolera y en la que puede progresar. Para algunas personas con hernia, la sentadilla profunda con carga es tolerable desde fases tempranas; para otras requiere tiempo.</p>
+    </div>
+
+    <div class="exercise-card">
+      <div class="exercise-name">Bisagra de cadera y peso muerto adaptado</div>
+      <div class="exercise-badges"><span class="badge badge-green">Cadena posterior</span><span class="badge badge-blue">Isquios · Glúteos · Extensores lumbares</span></div>
+      <p class="exercise-desc">El patrón de bisagra de cadera (hip hinge) — doblar el tronco manteniendo la columna en posición neutra mientras las caderas se mueven hacia atrás — es uno de los movimientos más útiles para recuperar fuerza y tolerancia en personas con hernia discal. El peso muerto rumano con carga ligera o el peso muerto con mancuernas suelen ser buenos puntos de entrada. El peso muerto convencional con barra y carga alta puede incorporarse en fases más avanzadas, cuando la tolerancia y la técnica lo permiten.</p>
+    </div>
+
+    <div class="exercise-card">
+      <div class="exercise-name">Remo y ejercicios de tracción</div>
+      <div class="exercise-badges"><span class="badge badge-green">Espalda alta · Trapecio · Bíceps</span><span class="badge badge-blue">Sin carga axial directa</span></div>
+      <p class="exercise-desc">El remo con mancuerna apoyado en banco, el remo en polea baja o el jalón al pecho son ejercicios de tracción que trabajan la espalda superior sin cargar directamente la columna lumbar en compresión axial. Son frecuentemente bien tolerados incluso en fases tempranas. La posición de partida del remo apoyado (rodilla y mano en banco) puede ser especialmente cómoda cuando la flexión mantenida es problemática.</p>
+    </div>
+
+    <div class="exercise-card">
+      <div class="exercise-name">Ejercicios de empuje</div>
+      <div class="exercise-badges"><span class="badge badge-green">Pectoral · Hombro anterior · Tríceps</span><span class="badge badge-blue">Variantes verticales y horizontales</span></div>
+      <p class="exercise-desc">El press de banca, el press inclinado o las flexiones de brazos son ejercicios de empuje que, en muchas personas con hernia discal, se toleran bien porque la columna no está bajo carga axial. La posición tumbada en press de banca puede incluso resultar cómoda cuando estar de pie o sentado es molesto. La flexión de brazos puede adaptarse desde rodillas o con las manos elevadas para reducir la intensidad.</p>
+    </div>
+
+    <div class="exercise-card">
+      <div class="exercise-name">Carries (caminatas con carga)</div>
+      <div class="exercise-badges"><span class="badge badge-green">Estabilidad global · Core funcional</span><span class="badge badge-blue">Alta transferencia funcional</span></div>
+      <p class="exercise-desc">Caminar sosteniendo una carga (farmer carry con mancuernas, suitcase carry unilateral) es uno de los ejercicios de mayor transferencia funcional para personas con hernia discal — reproduce el gesto de llevar la compra, una mochila o cualquier objeto del día a día. Exige estabilización activa de la columna en movimiento sin los patrones de flexión que pueden generar molestias.</p>
+    </div>
+
+    <div class="exercise-card">
+      <div class="exercise-name">Ejercicios de tronco (anti-movimiento)</div>
+      <div class="exercise-badges"><span class="badge badge-green">Estabilidad lumbar</span><span class="badge badge-blue">Plancha · Paloff · Bird dog</span></div>
+      <p class="exercise-desc">La plancha, el bird dog, el Paloff press o los paseos de granjero son ejercicios que trabajan la capacidad del tronco para resistir movimiento (anti-flexión, anti-rotación) más que para producirlo. Suelen ser bien tolerados y tienen buena evidencia como parte de los protocolos de readaptación lumbar. No por "proteger la columna" — sino porque son buenos estímulos de fuerza que se toleran en fases iniciales.</p>
+    </div>
+
+    <h2 id="modificar-no-prohibir">¿Qué ejercicios debo evitar con hernia discal?</h2>
+    <p>No existen ejercicios universalmente prohibidos para todas las personas con hernia discal. Esta afirmación no es una licencia para hacer cualquier cosa — es una invitación a pensar con más precisión. Lo relevante no es el nombre del ejercicio sino la dosis, el contexto y la respuesta individual.</p>
+    <p>Cuando un ejercicio genera síntomas que aumentan o persisten, la respuesta más útil no es eliminarlo para siempre sino preguntarse qué variable modificar:</p>
+
+    <div style="overflow-x:auto;margin:12px 0 26px;">
+      <table class="summary-table" role="table" aria-label="Modificaciones posibles en ejercicios con hernia discal">
+        <thead><tr><th>Variable</th><th class="th-green">Qué modificar</th><th>Ejemplo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Carga</strong></td><td class="td-good">Reducir peso</td><td>Peso muerto con kettlebell ligero en lugar de barra cargada</td></tr>
+          <tr><td><strong>Rango de movimiento</strong></td><td class="td-good">Reducir recorrido</td><td>Sentadilla a caja alta en lugar de profunda</td></tr>
+          <tr><td><strong>Volumen</strong></td><td class="td-good">Menos series o repeticiones</td><td>2 series de 8 en lugar de 4 de 12</td></tr>
+          <tr><td><strong>Velocidad</strong></td><td class="td-good">Más lento y controlado</td><td>Fase excéntrica de 3 segundos</td></tr>
+          <tr><td><strong>Variante</strong></td><td class="td-good">Cambiar el ejercicio temporalmente</td><td>Remo apoyado en lugar de remo de pie</td></tr>
+          <tr><td><strong>Posición</strong></td><td class="td-good">Cambiar la posición de partida</td><td>Press de banca tumbado en lugar de press militar de pie</td></tr>
+          <tr><td><strong>Progresión</strong></td><td class="td-good">Ir más despacio en la progresión</td><td>Mantener la misma carga 3 semanas antes de subir</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>En la práctica, los movimientos que más frecuentemente requieren modificación en la fase inicial son los que combinan carga axial alta con flexión lumbar profunda (sentadilla muy profunda con peso máximo) o carga axial con impacto repetido. No porque estén "prohibidos" — sino porque en fases agudas la tolerancia a esa combinación específica suele ser baja. Eso cambia con la progresión.</p>
+
+    <h2 id="fuerza-hernia-L5S1">Entrenamiento de fuerza con hernia L5-S1</h2>
+    <p>Los principios del entrenamiento de fuerza no cambian por el nivel específico de la hernia. Una hernia en L5-S1 puede producir síntomas de raíz S1 (dolor e irradiación por la cara posterior del muslo, pantorrilla y talón), lo que puede limitar temporalmente la carga en ciertos movimientos como el peso muerto convencional o la prensa de piernas con cadera muy flexionada. Pero los principios de progresión, tolerancia y dosis siguen siendo los mismos.</p>
+    <p>Para un protocolo detallado específico para este nivel, consulta la guía de <a href="hernia-L5-S1-ejercicio.html" style="color:var(--green-dark,#0d7a40);text-decoration:underline;text-decoration-color:rgba(13,122,64,.35);text-underline-offset:2px;font-weight:inherit;">ejercicios para hernia L5-S1</a>.</p>
+
+    <h2 id="fuerza-hernia-L4L5">Entrenamiento de fuerza con hernia L4-L5</h2>
+    <p>La hernia en L4-L5 comprime habitualmente la raíz L5, con síntomas que pueden incluir dolor en la cara lateral del muslo y la pierna hasta el dorso del pie. Al igual que con L5-S1, el nivel no modifica los principios del entrenamiento — sí puede orientar qué variantes son más toleradas en las primeras fases y qué síntomas monitorizar durante la progresión.</p>
+    <p>Ver la guía completa de <a href="hernia-L4-L5-ejercicio.html" style="color:var(--green-dark,#0d7a40);text-decoration:underline;text-decoration-color:rgba(13,122,64,.35);text-underline-offset:2px;font-weight:inherit;">ejercicios para hernia L4-L5</a> para el protocolo específico.</p>
+
+    <h2 id="fuerza-hernia-gimnasio">¿Puedo ir al gimnasio con hernia discal?</h2>
+    <p>Sí. El gimnasio ofrece acceso a un rango muy amplio de ejercicios adaptables que lo convierten en un entorno ideal para la readaptación de hernia discal. Máquinas como el jalón, el remo en polea, el leg press a recorrido parcial o el cable permiten ajustar carga y posición con precisión. Para orientación específica sobre cómo estructurar el entrenamiento, visita el artículo sobre <a href="gimnasio-dolor-lumbar.html" style="color:var(--green-dark,#0d7a40);text-decoration:underline;text-decoration-color:rgba(13,122,64,.35);text-underline-offset:2px;font-weight:inherit;">entrenar en el gimnasio con dolor lumbar</a>.</p>
+
+    <!-- CTA específico fuerza -->
+    <div style="background:var(--green-pale,#e8f7ef);border-radius:16px;padding:24px 28px;margin:36px 0;display:flex;flex-wrap:wrap;align-items:center;gap:16px;">
+      <div style="flex:1;min-width:220px;">
+        <div style="font-family:'Sora',sans-serif;font-size:1rem;font-weight:700;color:var(--green-dark,#0d7a40);margin-bottom:6px;">¿Tienes hernia discal y no sabes cómo volver a entrenar?</div>
+        <p style="font-size:.88rem;color:var(--ink-60,#555f5b);margin:0;line-height:1.6;">En ReActiva Espalda utilizamos ejercicio progresivo e individualizado para recuperar capacidad, fuerza y confianza — adaptado a tu diagnóstico, tus síntomas y tus objetivos.</p>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <a href="programa-online-dolor-lumbar.html" style="display:inline-flex;align-items:center;gap:5px;background:var(--green-dark,#0d7a40);color:#fff;font-size:.85rem;font-weight:600;padding:10px 18px;border-radius:100px;text-decoration:none;">Ver el programa →</a>
+        <a href="https://wa.me/34690036625?text=Hola%20Pau%2C%20me%20interesa%20el%20programa%20ReActiva%20Espalda" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#25D366;color:#fff;font-size:.85rem;font-weight:600;padding:10px 16px;border-radius:100px;text-decoration:none;"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp</a>
+      </div>
+    </div>
+    <!-- /BLOQUE FUERZA -->
+
+        <h2 id="faq-fuerza-hernia">Preguntas frecuentes: fuerza y hernia discal</h2>
+    <div role="region" aria-label="Preguntas frecuentes sobre fuerza y hernia discal" style="display:flex;flex-direction:column;gap:0;border:1px solid var(--green-pale,#e8f7ef);border-radius:12px;overflow:hidden;margin:16px 0 32px;">
+      <details style="border-bottom:1px solid var(--green-pale,#e8f7ef);">
+        <summary style="padding:14px 18px;font-family:'Sora',sans-serif;font-size:.92rem;font-weight:700;color:var(--ink,#1a1a1a);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">¿Puedo hacer pesas con una hernia discal? <span style="color:var(--green-mid,#17a05c);font-size:1.1rem;flex-shrink:0;">+</span></summary>
+        <div style="padding:4px 18px 16px;font-size:.88rem;color:var(--ink-60,#555f5b);line-height:1.7;">Sí. El entrenamiento con pesas es compatible con la hernia discal en la mayoría de casos. La clave es la dosis: empezar con cargas bajas, progresar gradualmente y guiarse por la respuesta del cuerpo en las 24-48 horas siguientes. Tener una hernia discal no hace la columna frágil ni contraindica el ejercicio de fuerza.</div>
+      </details>
+      <details style="border-bottom:1px solid var(--green-pale,#e8f7ef);">
+        <summary style="padding:14px 18px;font-family:'Sora',sans-serif;font-size:.92rem;font-weight:700;color:var(--ink,#1a1a1a);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">¿Es bueno hacer fuerza con una hernia lumbar? <span style="color:var(--green-mid,#17a05c);font-size:1.1rem;flex-shrink:0;">+</span></summary>
+        <div style="padding:4px 18px 16px;font-size:.88rem;color:var(--ink-60,#555f5b);line-height:1.7;">Sí. El entrenamiento de fuerza progresivo mejora la tolerancia a la carga, reduce el dolor a medio plazo y recupera la función. No existe evidencia que indique que el ejercicio de fuerza empeore el pronóstico de la hernia discal. Al contrario, es parte central del abordaje conservador con mayor evidencia.</div>
+      </details>
+      <details style="border-bottom:1px solid var(--green-pale,#e8f7ef);">
+        <summary style="padding:14px 18px;font-family:'Sora',sans-serif;font-size:.92rem;font-weight:700;color:var(--ink,#1a1a1a);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">¿Puedo hacer sentadillas con una hernia discal? <span style="color:var(--green-mid,#17a05c);font-size:1.1rem;flex-shrink:0;">+</span></summary>
+        <div style="padding:4px 18px 16px;font-size:.88rem;color:var(--ink-60,#555f5b);line-height:1.7;">En muchos casos sí, adaptando la variante, el rango o la carga. La sentadilla goblet o en caja suelen ser buenos puntos de entrada. La variante específica depende de los síntomas, la tolerancia y la experiencia previa — no del diagnóstico por imagen.</div>
+      </details>
+      <details style="border-bottom:1px solid var(--green-pale,#e8f7ef);">
+        <summary style="padding:14px 18px;font-family:'Sora',sans-serif;font-size:.92rem;font-weight:700;color:var(--ink,#1a1a1a);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">¿Puedo hacer peso muerto con una hernia discal? <span style="color:var(--green-mid,#17a05c);font-size:1.1rem;flex-shrink:0;">+</span></summary>
+        <div style="padding:4px 18px 16px;font-size:.88rem;color:var(--ink-60,#555f5b);line-height:1.7;">El patrón de bisagra de cadera es uno de los más útiles en la readaptación lumbar. El peso muerto rumano con carga progresiva suele tolerarse bien. El peso muerto convencional con carga alta puede incorporarse en fases avanzadas cuando la tolerancia lo permite. No es un ejercicio prohibido — requiere progresión adecuada.</div>
+      </details>
+      <details style="border-bottom:1px solid var(--green-pale,#e8f7ef);">
+        <summary style="padding:14px 18px;font-family:'Sora',sans-serif;font-size:.92rem;font-weight:700;color:var(--ink,#1a1a1a);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">¿Qué ejercicios debo evitar con hernia discal? <span style="color:var(--green-mid,#17a05c);font-size:1.1rem;flex-shrink:0;">+</span></summary>
+        <div style="padding:4px 18px 16px;font-size:.88rem;color:var(--ink-60,#555f5b);line-height:1.7;">No existen ejercicios universalmente prohibidos. Lo relevante es la dosis, el contexto y la respuesta individual. Cuando un ejercicio genera síntomas que aumentan, la respuesta más útil es modificar la carga, el rango, el volumen o la variante — no eliminarlo de forma permanente.</div>
+      </details>
+      <details>
+        <summary style="padding:14px 18px;font-family:'Sora',sans-serif;font-size:.92rem;font-weight:700;color:var(--ink,#1a1a1a);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">¿Puedo ir al gimnasio con hernia L5-S1? <span style="color:var(--green-mid,#17a05c);font-size:1.1rem;flex-shrink:0;">+</span></summary>
+        <div style="padding:4px 18px 16px;font-size:.88rem;color:var(--ink-60,#555f5b);line-height:1.7;">Sí. El gimnasio ofrece una gran variedad de ejercicios adaptables. El nivel L5-S1 no modifica los principios generales del entrenamiento — puede orientar qué variantes son más toleradas en las primeras fases y qué síntomas monitorizar durante la progresión.</div>
+      </details>
+    </div>
+
+<div class="sources">
       <h3>Referencias científicas</h3>
       <ul>
         <li>Brinjikji W, et al. (2015). Systematic literature review of imaging features of spinal degeneration in asymptomatic populations. <em>AJNR Am J Neuroradiol</em>, 36(4), 811–816.</li>
@@ -340,6 +629,8 @@
         <li>Macki M, et al. (2014). Spontaneous regression of sequestrated lumbar disc herniations. <em>J Clin Neurosci</em>, 21(6), 909–913.</li>
         <li>Weinstein JN, et al. (2006). Surgical vs nonoperative treatment for lumbar disk herniation. The SPORT study. <em>JAMA</em>, 296(20), 2441–2450.</li>
         <li>Chiu CC, et al. (2015). The probability of spontaneous regression of lumbar herniated disc. <em>Clin Rehabil</em>, 29(2), 184–195.</li>
+      
+        <li>Searle A, et al. (2015). Exercise interventions for the treatment of chronic low back pain: a systematic review and meta-analysis. <em>J Health Sci</em>. — Revisión sistemática que respalda el ejercicio de fuerza progresivo como intervención principal para el dolor lumbar crónico con hernia discal.</li>
       </ul>
     </div>
 
@@ -475,5 +766,28 @@
   </svg>
 </a>
 
+<script>
+/* Dropdown keep-alive fix */
+(function(){
+  var timers = {};
+  document.querySelectorAll('.nav-dropdown').forEach(function(el, i){
+    el.addEventListener('mouseenter', function(){ clearTimeout(timers[i]); });
+    el.addEventListener('mouseleave', function(){
+      timers[i] = setTimeout(function(){ }, 0);
+    });
+    var sub = el.querySelector('.nav-sub');
+    if(sub){
+      el.addEventListener('mouseenter', function(){ sub.style.display='block'; });
+      el.addEventListener('mouseleave', function(){
+        timers[i] = setTimeout(function(){ sub.style.display=''; }, 80);
+      });
+      sub.addEventListener('mouseenter', function(){ clearTimeout(timers[i]); sub.style.display='block'; });
+      sub.addEventListener('mouseleave', function(){
+        timers[i] = setTimeout(function(){ sub.style.display=''; }, 80);
+      });
+    }
+  });
+})();
+</script>
 </body>
 </html>
