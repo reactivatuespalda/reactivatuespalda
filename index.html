@@ -386,8 +386,8 @@
 
     /* ─── PROBLEM ─────────────────────────────────────────────── */
     #problema {
-      padding: 100px 0;
-      background: var(--ink);
+      padding: 72px 0;
+      background: linear-gradient(135deg, #0a5c30 0%, #0d7a40 60%, #0f8c4a 100%);
       position: relative;
       overflow: hidden;
     }
@@ -437,7 +437,7 @@
 
     /* ─── SOLUTION ────────────────────────────────────────────── */
     #solucion {
-      padding: 100px 0;
+      padding: 72px 0;
       background: var(--bg);
     }
     .solution-grid {
@@ -544,7 +544,7 @@
 
     /* ─── FOR WHOM ────────────────────────────────────────────── */
     #para-quien {
-      padding: 100px 0;
+      padding: 72px 0;
       background: var(--surface);
     }
     .for-whom-header { text-align: center; margin-bottom: 56px; }
@@ -578,7 +578,7 @@
 
     /* ─── TEST CTA ────────────────────────────────────────────── */
     #test {
-      padding: 100px 0;
+      padding: 72px 0;
       background: linear-gradient(135deg, var(--green-dark) 0%, #0a5c30 100%);
       position: relative;
       overflow: hidden;
@@ -644,7 +644,7 @@
 
     /* ─── ABOUT ───────────────────────────────────────────────── */
     #sobre-mi {
-      padding: 100px 0;
+      padding: 72px 0;
       background: var(--bg);
     }
     .about-grid {
@@ -730,7 +730,7 @@
 
     /* ─── TESTIMONIALS ────────────────────────────────────────── */
     #testimonios {
-      padding: 100px 0;
+      padding: 72px 0;
       background: var(--surface);
     }
     .testi-header { text-align: center; margin-bottom: 56px; }
@@ -779,7 +779,7 @@
 
     /* ─── FAQ ─────────────────────────────────────────────────── */
     #faq {
-      padding: 100px 0;
+      padding: 72px 0;
       background: var(--bg);
     }
     .faq-inner { max-width: 760px; margin: 0 auto; }
@@ -827,7 +827,7 @@
 
     /* ─── BLOG ────────────────────────────────────────────────── */
     #blog {
-      padding: 100px 0;
+      padding: 72px 0;
       background: var(--surface);
     }
     .blog-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 48px; flex-wrap: wrap; gap: 16px; }
@@ -889,7 +889,7 @@
 
     /* ─── CONTACT ─────────────────────────────────────────────── */
     #contacto {
-      padding: 100px 0;
+      padding: 72px 0;
       background: var(--bg);
     }
     .contact-grid {
@@ -1055,15 +1055,19 @@
     #scrolltop:hover { transform: translateY(-2px); background: var(--green-mid); }
 
     /* ─── ANIMATIONS ──────────────────────────────────────────── */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
+    /* @keyframes fadeUp removed - using CSS transitions instead */
+    .fade-up {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity .45s ease, transform .45s ease;
     }
-    .fade-up { opacity: 0; }
-    .fade-up.visible { animation: fadeUp .55s ease both; }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
     @media (prefers-reduced-motion: reduce) {
-      .fade-up { opacity: 1; animation: none; }
+      .fade-up { opacity: 1; transform: none; transition: none; }
     }
   
     /* Dropdown nav */
@@ -1398,6 +1402,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 </head>
+<!-- REACTIVA-v3-FIX-17AUG2026 -->
 <body>
 
 <!-- ═══════════ NAV ═══════════ -->
@@ -1904,11 +1909,13 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-photo-wrap fade-up">
-        <img src="favicon-192.png" 
-               alt="Pau Sintes, especialista en readaptación lumbar y entrenamiento progresivo"
-               class="about-photo"
-               style="object-fit:cover;object-position:center 20%;padding:0;border:none;background:var(--green-pale,#d4f0e3);"
-               width="400" height="500" loading="lazy">
+        <img 
+          src="pau-sintes-foto.jpg.png" 
+          alt="Pau Sintes, especialista en readaptación lumbar y entrenamiento progresivo"
+          class="about-photo"
+          width="400" height="500"
+          loading="lazy"
+          style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:var(--radius-lg);background:var(--green-pale);">
         <div class="about-badge" aria-label="Más de 8 años de experiencia">
           <span class="badge-num">+8</span>
           <span class="badge-lbl">años de experiencia</span>
