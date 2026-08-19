@@ -2574,84 +2574,7 @@
 <!-- ═══════════ SCROLL TO TOP ═══════════ -->
 <button id="scrolltop" aria-label="Volver al inicio de la página" title="Volver arriba">↑</button>
 
-<script>
-  // ── Nav scroll effect
-  const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 40);
-  }, {passive: true});
 
-  // ── Drawer open/close
-  const drawerOverlay = document.getElementById('drawer-overlay');
-  const drawer = document.getElementById('nav-drawer');
-  const openBtn = document.getElementById('drawer-open-btn');
-  const closeBtn = document.getElementById('drawer-close-btn');
-
-  function openDrawer() {
-    drawerOverlay.style.display = 'block';
-    setTimeout(function() { drawerOverlay.style.opacity = '1'; }, 10);
-    drawer.classList.add('open');
-    openBtn.setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeDrawer() {
-    drawerOverlay.style.opacity = '0';
-    setTimeout(function() { drawerOverlay.style.display = 'none'; }, 300);
-    drawer.classList.remove('open');
-    openBtn.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
-  }
-
-  if (openBtn) openBtn.addEventListener('click', openDrawer);
-  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
-  if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer);
-
-  // Close on Escape
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeDrawer();
-  });
-
-  // ── Drawer accordion
-  function toggleDrawerCat(id) {
-    const cat = document.getElementById(id);
-    const isOpen = cat.classList.contains('is-open');
-    // Close all
-    document.querySelectorAll('.drawer-cat.is-open').forEach(el => {
-      el.classList.remove('is-open');
-      el.querySelector('.drawer-cat-btn').setAttribute('aria-expanded', 'false');
-    });
-    // Open clicked if it was closed
-    if (!isOpen) {
-      cat.classList.add('is-open');
-      cat.querySelector('.drawer-cat-btn').setAttribute('aria-expanded', 'true');
-    }
-  }
-
-  // ── Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        closeDrawer();
-        setTimeout(() => {
-          target.scrollIntoView({behavior:'smooth', block:'start'});
-        }, 100);
-      }
-    });
-  });
-
-
-
-  // ── IntersectionObserver for fade-up
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-    }, {threshold: 0.08});
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-  }
-</script>
 
 <script>
   // ── Contact form (Formspree)
@@ -2850,5 +2773,83 @@
 </div>
 
 
+<script>
+  // ── Nav scroll effect
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  }, {passive: true});
+
+  // ── Drawer open/close
+  const drawerOverlay = document.getElementById('drawer-overlay');
+  const drawer = document.getElementById('nav-drawer');
+  const openBtn = document.getElementById('drawer-open-btn');
+  const closeBtn = document.getElementById('drawer-close-btn');
+
+  function openDrawer() {
+    drawerOverlay.style.display = 'block';
+    setTimeout(function() { drawerOverlay.style.opacity = '1'; }, 10);
+    drawer.classList.add('open');
+    openBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    drawerOverlay.style.opacity = '0';
+    setTimeout(function() { drawerOverlay.style.display = 'none'; }, 300);
+    drawer.classList.remove('open');
+    openBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  if (openBtn) openBtn.addEventListener('click', openDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer);
+
+  // Close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeDrawer();
+  });
+
+  // ── Drawer accordion
+  function toggleDrawerCat(id) {
+    const cat = document.getElementById(id);
+    const isOpen = cat.classList.contains('is-open');
+    // Close all
+    document.querySelectorAll('.drawer-cat.is-open').forEach(el => {
+      el.classList.remove('is-open');
+      el.querySelector('.drawer-cat-btn').setAttribute('aria-expanded', 'false');
+    });
+    // Open clicked if it was closed
+    if (!isOpen) {
+      cat.classList.add('is-open');
+      cat.querySelector('.drawer-cat-btn').setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  // ── Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        closeDrawer();
+        setTimeout(() => {
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+        }, 100);
+      }
+    });
+  });
+
+
+
+  // ── IntersectionObserver for fade-up
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, {threshold: 0.08});
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  }
+</script>
 </body>
 </html>

@@ -803,150 +803,6 @@
   </div>
 </nav>
 
-<!-- Mobile Drawer Overlay -->
-<div class="nav-drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
-
-<!-- Mobile Drawer -->
-<div class="nav-drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-label="Menú de navegación">
-
-  <!-- Drawer Header -->
-  <div class="drawer-header">
-    <a href="index.html" class="nav-logo" aria-label="Inicio">
-      <div class="nav-logo-bars" aria-hidden="true">
-        <div class="bar bar-1"></div>
-        <div class="bar bar-2"></div>
-        <div class="bar bar-3"><div class="bar-arrow"></div></div>
-      </div>
-      <div class="nav-divider" aria-hidden="true"></div>
-      <span class="nav-name">Re<span>A</span>ctiva Espalda</span>
-    </a>
-    <button class="drawer-close" id="drawer-close-btn" aria-label="Cerrar menú">✕</button>
-  </div>
-
-  <!-- Drawer Body -->
-  <div class="drawer-body">
-
-    <!-- Programa CTA card -->
-    <a href="programa.html" class="drawer-programa">
-      <div class="drawer-programa-inner">
-        <div>
-          <p class="drawer-programa-label">Programa online</p>
-          <p class="drawer-programa-title">ReActiva Espalda</p>
-          <p class="drawer-programa-sub">Readaptación lumbar · 12 o 24 semanas</p>
-        </div>
-        <span class="drawer-programa-arrow">→</span>
-      </div>
-    </a>
-
-    <div class="drawer-eyebrow" style="margin-top:20px;">Navega por tema</div>
-
-    <!-- Dolor lumbar -->
-    <div class="drawer-cat" id="dc-dolor">
-      <button class="drawer-cat-btn" onclick="toggleDrawerCat('dc-dolor')" aria-expanded="false">
-        <div class="drawer-cat-icon">🦴</div>
-        <span class="drawer-cat-label">Dolor lumbar</span>
-        <span class="drawer-chevron">▾</span>
-      </button>
-      <div class="drawer-panel">
-        <div class="drawer-panel-inner">
-          <div class="drawer-subhead">Tipos de dolor</div>
-          <a class="drawer-item" href="dolor-lumbar-persistente.html"><span class="drawer-item-dot"></span>Dolor lumbar persistente</a>
-          <a class="drawer-item" href="lumbalgia-aguda.html"><span class="drawer-item-dot"></span>Lumbalgia aguda</a>
-          <div class="drawer-subhead">Entender el dolor</div>
-          <a class="drawer-item" href="lumbalgia-causas.html"><span class="drawer-item-dot"></span>Causas del dolor lumbar</a>
-          <a class="drawer-item" href="miedo-movimiento-dolor-lumbar.html"><span class="drawer-item-dot"></span>Kinesiofobia</a>
-          <a class="drawer-item" href="dolor-lumbar-estres.html"><span class="drawer-item-dot"></span>Estrés y dolor lumbar</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Hernia discal -->
-    <div class="drawer-cat" id="dc-hernia">
-      <button class="drawer-cat-btn" onclick="toggleDrawerCat('dc-hernia')" aria-expanded="false">
-        <div class="drawer-cat-icon">💿</div>
-        <span class="drawer-cat-label">Hernia discal</span>
-        <span class="drawer-chevron">▾</span>
-      </button>
-      <div class="drawer-panel">
-        <div class="drawer-panel-inner">
-          <div class="drawer-subhead">Por nivel</div>
-          <a class="drawer-item" href="hernia-lumbar-ejercicio.html"><span class="drawer-item-dot"></span>Hernia discal lumbar</a>
-          <a class="drawer-item" href="hernia-L4-L5-ejercicio.html"><span class="drawer-item-dot"></span>Hernia L4-L5</a>
-          <a class="drawer-item" href="hernia-L5-S1-ejercicio.html"><span class="drawer-item-dot"></span>Hernia L5-S1</a>
-          <a class="drawer-item" href="ciatica-ejercicio-terapeutico.html"><span class="drawer-item-dot"></span>Ciática</a>
-          <div class="drawer-subhead">Diagnósticos</div>
-          <a class="drawer-item" href="discopatia-lumbar.html"><span class="drawer-item-dot"></span>Discopatía lumbar</a>
-          <a class="drawer-item" href="hernia-discal-ejercicios-prohibidos.html"><span class="drawer-item-dot"></span>Ejercicios prohibidos</a>
-          <a class="drawer-item" href="hernia-discal-cuando-operar.html"><span class="drawer-item-dot"></span>¿Cuándo operar?</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Ejercicio -->
-    <div class="drawer-cat" id="dc-ejercicio">
-      <button class="drawer-cat-btn" onclick="toggleDrawerCat('dc-ejercicio')" aria-expanded="false">
-        <div class="drawer-cat-icon">🏋️</div>
-        <span class="drawer-cat-label">Ejercicio</span>
-        <span class="drawer-chevron">▾</span>
-      </button>
-      <div class="drawer-panel">
-        <div class="drawer-panel-inner">
-          <div class="drawer-subhead">Guías</div>
-          <a class="drawer-item" href="ejercicios-dolor-lumbar.html"><span class="drawer-item-dot"></span>Ejercicios para el dolor lumbar</a>
-          <a class="drawer-item" href="estiramientos-dolor-lumbar.html"><span class="drawer-item-dot"></span>Estiramientos</a>
-          <a class="drawer-item" href="ejercicios-espalda.html"><span class="drawer-item-dot"></span>Ejercicios de espalda</a>
-          <div class="drawer-subhead">Actividades</div>
-          <a class="drawer-item" href="caminar-dolor-lumbar.html"><span class="drawer-item-dot"></span>Caminar</a>
-          <a class="drawer-item" href="correr-dolor-lumbar.html"><span class="drawer-item-dot"></span>Correr</a>
-          <a class="drawer-item" href="natacion-dolor-lumbar.html"><span class="drawer-item-dot"></span>Natación</a>
-          <a class="drawer-item" href="pilates-dolor-lumbar.html"><span class="drawer-item-dot"></span>Pilates</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Vida diaria -->
-    <div class="drawer-cat" id="dc-vida">
-      <button class="drawer-cat-btn" onclick="toggleDrawerCat('dc-vida')" aria-expanded="false">
-        <div class="drawer-cat-icon">💡</div>
-        <span class="drawer-cat-label">Vida diaria</span>
-        <span class="drawer-chevron">▾</span>
-      </button>
-      <div class="drawer-panel">
-        <div class="drawer-panel-inner">
-          <div class="drawer-subhead">Situaciones frecuentes</div>
-          <a class="drawer-item" href="dolor-lumbar-sentado.html"><span class="drawer-item-dot"></span>Dolor al sentarse</a>
-          <a class="drawer-item" href="dolor-lumbar-dormir.html"><span class="drawer-item-dot"></span>Cómo dormir</a>
-          <a class="drawer-item" href="dolor-lumbar-manana.html"><span class="drawer-item-dot"></span>Dolor por la mañana</a>
-          <a class="drawer-item" href="dolor-lumbar-trabajo.html"><span class="drawer-item-dot"></span>Dolor en el trabajo</a>
-          <div class="drawer-subhead">Hábitos</div>
-          <a class="drawer-item" href="reposo-dolor-lumbar.html"><span class="drawer-item-dot"></span>Reposo y dolor lumbar</a>
-          <a class="drawer-item" href="tips-dolor-lumbar-vida-diaria.html"><span class="drawer-item-dot"></span>10 consejos diarios</a>
-          <a class="drawer-item" href="gestion-recaidas-dolor-lumbar.html"><span class="drawer-item-dot"></span>Gestión de recaídas</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="drawer-divider"></div>
-
-    <a class="drawer-simple" href="blog.html">
-      <span>Blog</span>
-      <span class="drawer-simple-arrow">›</span>
-    </a>
-    <a class="drawer-simple" href="sobre-pau-sintes.html">
-      <span>Sobre mí</span>
-      <span class="drawer-simple-arrow">›</span>
-    </a>
-
-  </div>
-
-  <!-- Drawer Footer CTA -->
-  <div class="drawer-footer">
-    <a href="https://wa.me/34690036625?text=Hola%20Pau%2C%20me%20interesa%20el%20programa%20ReActiva%20Espalda" class="drawer-cta" target="_blank" rel="noopener">
-      Valoración gratuita →
-    </a>
-  </div>
-
-</div>
 <main>
   <header class="article-hero">
     <div class="container-narrow">
@@ -1214,6 +1070,155 @@
     });
   });
 </script>
+
+
+
+<!-- Mobile Drawer Overlay -->
+<div class="nav-drawer-overlay" id="drawer-overlay" aria-hidden="true" style="display:none;"></div>
+
+<!-- Mobile Drawer -->
+<div class="nav-drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-label="Menú de navegación" style="transform:translateX(100%);position:fixed;top:0;right:0;height:100%;z-index:301;">
+
+  <!-- Drawer Header -->
+  <div class="drawer-header">
+    <a href="index.html" class="nav-logo" aria-label="Inicio">
+      <div class="nav-logo-bars" aria-hidden="true">
+        <div class="bar bar-1"></div>
+        <div class="bar bar-2"></div>
+        <div class="bar bar-3"><div class="bar-arrow"></div></div>
+      </div>
+      <div class="nav-divider" aria-hidden="true"></div>
+      <span class="nav-name">Re<span>A</span>ctiva Espalda</span>
+    </a>
+    <button class="drawer-close" id="drawer-close-btn" aria-label="Cerrar menú">✕</button>
+  </div>
+
+  <!-- Drawer Body -->
+  <div class="drawer-body">
+
+    <!-- Programa CTA card -->
+    <a href="programa.html" class="drawer-programa">
+      <div class="drawer-programa-inner">
+        <div>
+          <p class="drawer-programa-label">Programa online</p>
+          <p class="drawer-programa-title">ReActiva Espalda</p>
+          <p class="drawer-programa-sub">Readaptación lumbar · 12 o 24 semanas</p>
+        </div>
+        <span class="drawer-programa-arrow">→</span>
+      </div>
+    </a>
+
+    <div class="drawer-eyebrow" style="margin-top:20px;">Navega por tema</div>
+
+    <!-- Dolor lumbar -->
+    <div class="drawer-cat" id="dc-dolor">
+      <button class="drawer-cat-btn" onclick="toggleDrawerCat('dc-dolor')" aria-expanded="false">
+        <div class="drawer-cat-icon">🦴</div>
+        <span class="drawer-cat-label">Dolor lumbar</span>
+        <span class="drawer-chevron">▾</span>
+      </button>
+      <div class="drawer-panel">
+        <div class="drawer-panel-inner">
+          <div class="drawer-subhead">Tipos de dolor</div>
+          <a class="drawer-item" href="dolor-lumbar-persistente.html"><span class="drawer-item-dot"></span>Dolor lumbar persistente</a>
+          <a class="drawer-item" href="lumbalgia-aguda.html"><span class="drawer-item-dot"></span>Lumbalgia aguda</a>
+          <div class="drawer-subhead">Entender el dolor</div>
+          <a class="drawer-item" href="lumbalgia-causas.html"><span class="drawer-item-dot"></span>Causas del dolor lumbar</a>
+          <a class="drawer-item" href="miedo-movimiento-dolor-lumbar.html"><span class="drawer-item-dot"></span>Kinesiofobia</a>
+          <a class="drawer-item" href="dolor-lumbar-estres.html"><span class="drawer-item-dot"></span>Estrés y dolor lumbar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hernia discal -->
+    <div class="drawer-cat" id="dc-hernia">
+      <button class="drawer-cat-btn" onclick="toggleDrawerCat('dc-hernia')" aria-expanded="false">
+        <div class="drawer-cat-icon">💿</div>
+        <span class="drawer-cat-label">Hernia discal</span>
+        <span class="drawer-chevron">▾</span>
+      </button>
+      <div class="drawer-panel">
+        <div class="drawer-panel-inner">
+          <div class="drawer-subhead">Por nivel</div>
+          <a class="drawer-item" href="hernia-lumbar-ejercicio.html"><span class="drawer-item-dot"></span>Hernia discal lumbar</a>
+          <a class="drawer-item" href="hernia-L4-L5-ejercicio.html"><span class="drawer-item-dot"></span>Hernia L4-L5</a>
+          <a class="drawer-item" href="hernia-L5-S1-ejercicio.html"><span class="drawer-item-dot"></span>Hernia L5-S1</a>
+          <a class="drawer-item" href="ciatica-ejercicio-terapeutico.html"><span class="drawer-item-dot"></span>Ciática</a>
+          <div class="drawer-subhead">Diagnósticos</div>
+          <a class="drawer-item" href="discopatia-lumbar.html"><span class="drawer-item-dot"></span>Discopatía lumbar</a>
+          <a class="drawer-item" href="hernia-discal-ejercicios-prohibidos.html"><span class="drawer-item-dot"></span>Ejercicios prohibidos</a>
+          <a class="drawer-item" href="hernia-discal-cuando-operar.html"><span class="drawer-item-dot"></span>¿Cuándo operar?</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ejercicio -->
+    <div class="drawer-cat" id="dc-ejercicio">
+      <button class="drawer-cat-btn" onclick="toggleDrawerCat('dc-ejercicio')" aria-expanded="false">
+        <div class="drawer-cat-icon">🏋️</div>
+        <span class="drawer-cat-label">Ejercicio</span>
+        <span class="drawer-chevron">▾</span>
+      </button>
+      <div class="drawer-panel">
+        <div class="drawer-panel-inner">
+          <div class="drawer-subhead">Guías</div>
+          <a class="drawer-item" href="ejercicios-dolor-lumbar.html"><span class="drawer-item-dot"></span>Ejercicios para el dolor lumbar</a>
+          <a class="drawer-item" href="estiramientos-dolor-lumbar.html"><span class="drawer-item-dot"></span>Estiramientos</a>
+          <a class="drawer-item" href="ejercicios-espalda.html"><span class="drawer-item-dot"></span>Ejercicios de espalda</a>
+          <div class="drawer-subhead">Actividades</div>
+          <a class="drawer-item" href="caminar-dolor-lumbar.html"><span class="drawer-item-dot"></span>Caminar</a>
+          <a class="drawer-item" href="correr-dolor-lumbar.html"><span class="drawer-item-dot"></span>Correr</a>
+          <a class="drawer-item" href="natacion-dolor-lumbar.html"><span class="drawer-item-dot"></span>Natación</a>
+          <a class="drawer-item" href="pilates-dolor-lumbar.html"><span class="drawer-item-dot"></span>Pilates</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vida diaria -->
+    <div class="drawer-cat" id="dc-vida">
+      <button class="drawer-cat-btn" onclick="toggleDrawerCat('dc-vida')" aria-expanded="false">
+        <div class="drawer-cat-icon">💡</div>
+        <span class="drawer-cat-label">Vida diaria</span>
+        <span class="drawer-chevron">▾</span>
+      </button>
+      <div class="drawer-panel">
+        <div class="drawer-panel-inner">
+          <div class="drawer-subhead">Situaciones frecuentes</div>
+          <a class="drawer-item" href="dolor-lumbar-sentado.html"><span class="drawer-item-dot"></span>Dolor al sentarse</a>
+          <a class="drawer-item" href="dolor-lumbar-dormir.html"><span class="drawer-item-dot"></span>Cómo dormir</a>
+          <a class="drawer-item" href="dolor-lumbar-manana.html"><span class="drawer-item-dot"></span>Dolor por la mañana</a>
+          <a class="drawer-item" href="dolor-lumbar-trabajo.html"><span class="drawer-item-dot"></span>Dolor en el trabajo</a>
+          <div class="drawer-subhead">Hábitos</div>
+          <a class="drawer-item" href="reposo-dolor-lumbar.html"><span class="drawer-item-dot"></span>Reposo y dolor lumbar</a>
+          <a class="drawer-item" href="tips-dolor-lumbar-vida-diaria.html"><span class="drawer-item-dot"></span>10 consejos diarios</a>
+          <a class="drawer-item" href="gestion-recaidas-dolor-lumbar.html"><span class="drawer-item-dot"></span>Gestión de recaídas</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer-divider"></div>
+
+    <a class="drawer-simple" href="blog.html">
+      <span>Blog</span>
+      <span class="drawer-simple-arrow">›</span>
+    </a>
+    <a class="drawer-simple" href="sobre-pau-sintes.html">
+      <span>Sobre mí</span>
+      <span class="drawer-simple-arrow">›</span>
+    </a>
+
+  </div>
+
+  <!-- Drawer Footer CTA -->
+  <div class="drawer-footer">
+    <a href="https://wa.me/34690036625?text=Hola%20Pau%2C%20me%20interesa%20el%20programa%20ReActiva%20Espalda" class="drawer-cta" target="_blank" rel="noopener">
+      Valoración gratuita →
+    </a>
+  </div>
+
+</div>
+
+
 <script>
   // ── Nav scroll effect
   const navbar = document.getElementById('navbar');
