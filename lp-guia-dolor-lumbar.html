@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía gratis: 5 Errores que Agravan tu Dolor Lumbar | ReActiva Espalda</title>
+<meta name="description" content="Descarga gratis la guía de Pau Sintes: los 5 errores más comunes al volver a entrenar con dolor lumbar o hernia discal, y qué hacer en su lugar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --dark-green:#0d7a40;
+    --mid-green:#1db86a;
+    --mint-bg:#e8f7f0;
+    --mint-soft:#7ecba1;
+    --ink:#1c2b24;
+    --gray:#5b6b63;
+  }
+  * { box-sizing: border-box; margin:0; padding:0; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--ink);
+    background: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  img { max-width: 100%; display: block; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- Top bar ---------- */
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .topbar img { height: 34px; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    background: linear-gradient(160deg, var(--dark-green) 0%, var(--mid-green) 60%, var(--mint-soft) 130%);
+    background-image: url('assets/spine_mint_raw.png'), linear-gradient(160deg, var(--dark-green) 0%, var(--mid-green) 60%, var(--mint-soft) 130%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right -80px top -60px, 0 0;
+    background-size: 340px auto, 100% 100%;
+    color: white;
+    padding: 8px 0 60px 0;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: center;
+    padding-top: 28px;
+  }
+  .eyebrow {
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.9;
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.18;
+    margin-bottom: 18px;
+  }
+  .hero h1 em { color: #d7f5e6; font-style: italic; }
+  .hero p.lede {
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 0.95;
+    max-width: 480px;
+    margin-bottom: 6px;
+  }
+  .hero-photo-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-photo-wrap img.photo {
+    max-height: 420px;
+    width: auto;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.25));
+  }
+
+  /* ---------- Form card ---------- */
+  .form-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+    color: var(--ink);
+    max-width: 440px;
+    margin: -40px auto 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .form-card h2 {
+    font-size: 20px;
+    color: var(--dark-green);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .form-card p {
+    font-size: 14px;
+    color: var(--gray);
+    margin-bottom: 18px;
+  }
+
+  /* MailerLite form, restyled to match the brand instead of MailerLite's default look. */
+  #mlb2-45106535 .row-form {
+    display: flex;
+    flex-direction: column;
+  }
+  #mlb2-45106535 form.ml-block-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  #mlb2-45106535 input[type="text"],
+  #mlb2-45106535 input[type="email"] {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1.5px solid #d7e8de;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--ink);
+    background: white;
+  }
+  #mlb2-45106535 input[type="text"]:focus,
+  #mlb2-45106535 input[type="email"]:focus {
+    outline: none;
+    border-color: var(--mid-green);
+  }
+  #mlb2-45106535 button[type="submit"] {
+    background: var(--dark-green);
+    color: white;
+    border: none;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    width: 100%;
+  }
+  #mlb2-45106535 button[type="submit"]:hover { background: var(--mid-green); }
+  #mlb2-45106535 button.loading { display: none; }
+  #mlb2-45106535 .row-success {
+    text-align: center;
+    padding: 20px 0;
+  }
+  #mlb2-45106535 .row-success h4 {
+    color: var(--dark-green);
+    font-size: 19px;
+    margin-bottom: 6px;
+  }
+  #mlb2-45106535 .row-success p {
+    color: var(--gray);
+    font-size: 14px;
+  }
+  .form-note {
+    font-size: 11.5px;
+    color: var(--gray);
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+
+  /* ---------- Benefits ---------- */
+  .benefits {
+    padding: 64px 0;
+  }
+  .benefits h2 {
+    text-align: center;
+    font-size: 28px;
+    color: var(--dark-green);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .benefits > .wrap > p.sub {
+    text-align: center;
+    color: var(--gray);
+    font-size: 15.5px;
+    max-width: 520px;
+    margin: 0 auto 40px auto;
+  }
+  .benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .benefit-card {
+    background: var(--mint-bg);
+    border-radius: 12px;
+    padding: 26px 22px;
+  }
+  .benefit-card .num {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--mid-green);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .benefit-card h3 {
+    font-size: 17px;
+    color: var(--ink);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .benefit-card p {
+    font-size: 14px;
+    color: var(--gray);
+  }
+
+  /* ---------- About ---------- */
+  .about {
+    background: var(--mint-bg);
+    padding: 56px 0;
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 32px;
+    align-items: center;
+  }
+  .about-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .about-photo img { width: 160px; }
+  .about h3 { color: var(--dark-green); font-size: 19px; margin-bottom: 8px; }
+  .about p { color: var(--ink); font-size: 15px; max-width: 640px; }
+
+  /* ---------- Final CTA ---------- */
+  .final-cta {
+    padding: 64px 0 72px 0;
+    text-align: center;
+  }
+  .final-cta h2 {
+    font-size: 26px;
+    color: var(--dark-green);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .final-cta p { color: var(--gray); margin-bottom: 26px; }
+  .cta-anchor-btn {
+    display: inline-block;
+    background: var(--dark-green);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 15px 32px;
+    border-radius: 40px;
+    font-size: 15.5px;
+    transition: background 0.15s ease;
+  }
+  .cta-anchor-btn:hover { background: var(--mid-green); }
+
+  /* ---------- Footer ---------- */
+  footer {
+    border-top: 1px solid #e5ece8;
+    padding: 28px 0;
+    text-align: center;
+    font-size: 13px;
+    color: var(--gray);
+  }
+  footer a { color: var(--dark-green); text-decoration: none; font-weight: 600; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 8px; text-align: center; }
+    .hero-grid > div { min-width: 0; }
+    .hero p.lede { margin-left: auto; margin-right: auto; }
+    .hero h1 { font-size: 30px; }
+    .hero-photo-wrap { order: -1; }
+    .hero-photo-wrap img.photo { max-height: 260px; }
+    .form-card { margin-top: 20px; }
+    .benefit-grid { grid-template-columns: 1fr; }
+    .about-grid { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <img src="assets/logo_full.png" alt="ReActiva Espalda">
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Guía gratuita en PDF</div>
+        <h1>5 Errores que Agravan tu <em>Dolor Lumbar</em> Cuando Vuelves a Entrenar</h1>
+        <p class="lede">Descubre por qué sigues teniendo molestias al volver al deporte o al gimnasio — y qué hacer en su lugar para reactivarte sin miedo y sin recaídas.</p>
+      </div>
+      <div class="hero-photo-wrap">
+        <img class="photo" src="assets/pau.png" alt="Pau Sintes, Readaptador Físico Deportivo">
+      </div>
+    </div>
+
+    <div class="form-card">
+      <h2>Descarga la guía gratis</h2>
+      <p>Te enviaremos un email para confirmar tu suscripción — después recibirás la guía al instante.</p>
+
+      <div id="mlb2-45106535" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-45106535">
+        <div class="row-form">
+          <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2590876/forms/196535770060686625/subscribe" data-code="" method="post" target="_blank">
+            <input aria-label="name" type="text" name="fields[name]" placeholder="Tu nombre" autocomplete="given-name">
+            <input aria-label="email" aria-required="true" type="email" name="fields[email]" placeholder="Tu email" autocomplete="email" required>
+            <input type="hidden" name="ml-submit" value="1">
+            <div class="ml-form-embedSubmit">
+              <button type="submit" class="primary">Descargar Ebook</button>
+              <button disabled="disabled" style="display: none;" type="button" class="loading">
+                <div class="ml-form-embedSubmitLoad"></div>
+                <span class="sr-only">Loading...</span>
+              </button>
+            </div>
+            <input type="hidden" name="anticsrf" value="true">
+          </form>
+        </div>
+        <div class="row-success" style="display: none">
+          <h4>¡Ya casi está!</h4>
+          <p>Revisa tu email y confirma tu suscripción para recibir la guía.</p>
+        </div>
+      </div>
+
+      <p class="form-note">Al confirmar aceptas recibir emails de ReActiva Espalda. Puedes darte de baja cuando quieras.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MailerLite scripts: manejan el envío del formulario y el mensaje de éxito -->
+<script>
+  function ml_webform_success_45106535() {
+    var $ = ml_jQuery || jQuery;
+    $('.ml-subscribe-form-45106535 .row-success').show();
+    $('.ml-subscribe-form-45106535 .row-form').hide();
+  }
+</script>
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
+<script>
+  fetch("https://assets.mailerlite.com/jsonp/2590876/forms/196535770060686625/takel")
+</script>
+
+<section class="benefits">
+  <div class="wrap">
+    <h2>Qué vas a encontrar dentro</h2>
+    <p class="sub">10 páginas directas al grano, pensadas para leer en 10 minutos y aplicar hoy mismo.</p>
+    <div class="benefit-grid">
+      <div class="benefit-card">
+        <div class="num">Los 5 errores</div>
+        <h3>Por qué sigues teniendo molestias</h3>
+        <p>Los fallos más comunes al volver a entrenar con dolor lumbar o hernia discal, explicados sin tecnicismos.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="num">Plan de acción</div>
+        <h3>Qué hacer en su lugar</h3>
+        <p>Pautas concretas y aplicables para cada error: cuánto empezar, cómo progresar, qué técnica revisar.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="num">Autoevaluación</div>
+        <h3>¿Estás listo para el siguiente paso?</h3>
+        <p>Un checklist rápido para saber en qué punto estás y qué te falta trabajar antes de exigirte más.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap about-grid">
+    <div class="about-photo"><img src="assets/pau.png" alt="Pau Sintes"></div>
+    <div>
+      <h3>Quién te la escribe</h3>
+      <p><strong>Pau Sintes</strong>, readaptador físico deportivo y especialista en dolor de espalda. Grado en CAFYD y Máster por el INEFC. Ayuda a personas con dolor lumbar y hernia discal a volver a entrenar con confianza, sin reposo ni miedo al movimiento.</p>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="wrap">
+    <h2>Empieza por entender qué le pasa a tu espalda</h2>
+    <p>Descarga la guía gratis y da el primer paso hoy.</p>
+    <a href="#ml-embed-placeholder" class="cta-anchor-btn">Quiero mi guía gratis →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    ReActiva Espalda · <a href="https://reactivatuespalda.com">reactivatuespalda.com</a> · <a href="https://instagram.com/reactiva_espalda">@reactiva_espalda</a>
+  </div>
+</footer>
+
+</body>
+</html>
